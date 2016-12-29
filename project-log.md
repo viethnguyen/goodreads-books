@@ -28,3 +28,6 @@
   to do some generic processing at the beginning or end of every
   request. 
 - `with`: accompanies a snaplet with a call to a function. 
+- Some Snap resources:
+  + http://bonus500.github.io/sc2blog/#title-slide
+  + 
