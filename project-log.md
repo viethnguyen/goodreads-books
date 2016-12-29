@@ -30,4 +30,6 @@
 - `with`: accompanies a snaplet with a call to a function. 
 - Some Snap resources:
   + http://bonus500.github.io/sc2blog/#title-slide
-  + 
+  + https://github.com/j-hannes/snap-tutorial
+  
+- If you are new to Snap, start with `Site.hs` and `Application.hs`
