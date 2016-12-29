@@ -28,8 +28,23 @@
   to do some generic processing at the beginning or end of every
   request. 
 - `with`: accompanies a snaplet with a call to a function. 
-- Some Snap resources:
+- Some Snap resources that need to read:
   + http://bonus500.github.io/sc2blog/#title-slide
   + https://github.com/j-hannes/snap-tutorial
-  
+  + Github repo: https://github.com/snapframework/snap
 - If you are new to Snap, start with `Site.hs` and `Application.hs`
+- Several things need to read more: Splice, Heist template, CSS template
+- Heist tutorial: http://snapframework.com/docs/tutorials/heist
+- Example of `bind` in Heist: 
+
+```html
+<bind tag="longname">
+      Einstein, Feynman, Heisenberg, and Newton Research Corporation
+      Ltd.<sup>TM</sup>
+</bind>
+<p>
+	We at <longname/> have research expertise in many areas of physics.
+    Employment at <longname/> carries significant prestige.  The rigorous
+    hiring process developed by <longname/> is leading the industry.
+</p>	   
+```
