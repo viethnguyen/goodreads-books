@@ -1,3 +1,10 @@
+# Resources
+
+- Snap Hackage page: https://hackage.haskell.org/package/snap
+- Heist Hackage page:
+  https://hackage.haskell.org/package/snap-1.0.0.1/docs/Snap-Snaplet-Heist.html
+  
+
 # Dec 28, 2016
 
 - Start the project 
@@ -48,3 +55,11 @@
     hiring process developed by <longname/> is leading the industry.
 </p>	   
 ```
+
+- The `apply` tag: loads one of the application templates and inserts
+  it into the current template's node tree. If the target template
+  does not have any special tags, then the contents of the `apply` tag
+  are ignored. 
+- Heist lets you bind tags to Haskell code with a splice. A `Splice`
+  takes the input node from the template and outputs a list of nodes
+  that get "spliced" back into the template. 

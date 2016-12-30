@@ -1,9 +1,10 @@
-<bind tag="longname">
-      Einstein, Feynman, Heisenberg, and Newton Research Corporation
-      Ltd.<sup>TM</sup>
-</bind>
-<p>
-	We at <longname/> have research expertise in many areas of physics.
-    Employment at <longname/> carries significant prestige.  The rigorous
-    hiring process developed by <longname/> is leading the industry.
-</p>	   
+<apply template="base">
+  <bind tag="header">
+    <h1>Viet Nguyen.</h1>
+  </bind>
+  Some in-between text.
+  <bind tag="main">
+    <h1>Home Page</h1>
+    <p>Welcome to my book collection.</p>
+  </bind>
+</apply>
