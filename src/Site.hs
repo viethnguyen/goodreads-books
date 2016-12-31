@@ -18,6 +18,8 @@ import Snap.Core
 import Snap.Snaplet
 import Snap.Snaplet.Heist
 import Snap.Util.FileServe
+import Network.Wreq
+import Control.Lens
 
 ------------------------------------------------------------------------------
 import Application
@@ -35,3 +37,20 @@ app =
     h <- nestSnaplet "" heist $ heistInit "templates"
     addRoutes routes
     return $ App h
+
+-------------------------------------------------------------------------------
+-- | Read Goodreads key and password 
+goodreadsKey :: IO String
+goodreadsKey = fmap (takeWhile (/= '\n')) $ readFile "src/.goodreadskey"
+
+goodreadsPass :: IO String
+goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
+
+-------------------------------------------------------------------------------
+-- | Experimental Wreq query to Goodreads
+response :: IO ByteString
+response = do
+  key <- goodreadsKey
+  r <- get query 
+  return r
+  where query = "https://www.goodreads.com/review/list/5285276.xml?key=" + key +"&v=2?shelf=read"

@@ -63,3 +63,20 @@
 - Heist lets you bind tags to Haskell code with a splice. A `Splice`
   takes the input node from the template and outputs a list of nodes
   that get "spliced" back into the template. 
+
+# Dec 30, 2016
+
+- Explore how to get info from Goodreads using its API.
+- See this: https://www.goodreads.com/api/
+- "Get the books on members shelf"
+- We can get all information about the books by this HTTP GET: 
+
+```sh
+$ curl
+"https://www.goodreads.com/review/list/5285276.xml?key=jA5jRDRqX6LFkhCkZCppmQ&v=2?shelf=read"
+```
+
+This query get all information about the books in the `read` shelf. 
+- To do HTTP client, `wreq` is an option for Haskell. 
+- How to pass the response from wreq to the main program? 
+

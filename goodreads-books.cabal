@@ -34,8 +34,9 @@ Executable goodreads-books
     snap-loader-static        >= 1.0     && < 1.1,
     text                      >= 0.11    && < 1.3,
     time                      >= 1.1     && < 1.7,
-    xmlhtml                   >= 0.1
-
+    xmlhtml                   >= 0.1,
+    wreq
+                
   if flag(old-base)
     build-depends:
       base                      >= 4        && < 4.4,
