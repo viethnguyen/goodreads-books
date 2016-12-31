@@ -9,6 +9,7 @@ module Site
   ) where
 
 ------------------------------------------------------------------------------
+import Data.ByteString.Lazy as BLI (writeFile)
 import Data.ByteString (ByteString)
 import qualified Data.Text as T
 import qualified Heist.Interpreted as I
@@ -46,13 +47,21 @@ goodreadsPass :: IO String
 goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
 
 -------------------------------------------------------------------------------
--- | Experimental Wreq query to Goodreads
-testWreq :: IO ()
-testWreq = do
+-- | Use wreq to save response body from Goodreads 
+saveGoodreadsResponseBody :: IO ()
+saveGoodreadsResponseBody = do
   key <- goodreadsKey
   r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
-  let tags = parseTags  (r ^. responseBody)
-  putStrLn $ show tags 
---  putStrLn $ "Response: " ++ show (r ^. responseBody)
+  BLI.writeFile "src/.goodreadsresponse" (r ^. responseBody)
 
+-- | Experimetal response in tags
+sampleResponseInTags = do
+  key <- goodreadsKey
+  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
+  return $ parseTags (r ^. responseBody) 
 
+-- | A single review
+-- links = do
+--   tags <- sampleResponseInTags
+--   let l = takeWhile (~/= ("</review>"::BLI.ByteString)) $ dropWhile (~/= ("<review>"::BLI.ByteString)) tags
+--   return l

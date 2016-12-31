@@ -82,3 +82,11 @@ This query get all information about the books in the `read` shelf.
 - To parse XML file, probably use TagSoup? Read this tutorial, it's
   helpful: https://hackage.haskell.org/package/tagsoup
 
+# Dec 31, 2016
+
+- In each Goodread response, each item is wrapped inside a `<review>`
+  tag 
+- What information do we need for a book? ISBN, book name, book image
+  URL, book description, my comments.
+- To be easy, save a Goodread response into a file first, then using
+  TagSoup on that file. 
