@@ -9,7 +9,7 @@ module Site
   ) where
 
 ------------------------------------------------------------------------------
-import Data.ByteString.Lazy as BLI (writeFile)
+import qualified Data.ByteString.Lazy as BLI
 import Data.ByteString (ByteString)
 import qualified Data.Text as T
 import qualified Heist.Interpreted as I
@@ -47,21 +47,19 @@ goodreadsPass :: IO String
 goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
 
 -------------------------------------------------------------------------------
+-- | sample goodread response file name
+goodreadsResFilename :: FilePath
+goodreadsResFilename = "src/.goodreadsresponse"
+
 -- | Use wreq to save response body from Goodreads 
 saveGoodreadsResponseBody :: IO ()
 saveGoodreadsResponseBody = do
   key <- goodreadsKey
   r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
-  BLI.writeFile "src/.goodreadsresponse" (r ^. responseBody)
-
--- | Experimetal response in tags
-sampleResponseInTags = do
-  key <- goodreadsKey
-  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
-  return $ parseTags (r ^. responseBody) 
+  BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
 -- | A single review
--- links = do
---   tags <- sampleResponseInTags
---   let l = takeWhile (~/= ("</review>"::BLI.ByteString)) $ dropWhile (~/= ("<review>"::BLI.ByteString)) tags
---   return l
+links = do
+  tags <- parseTags <$> readFile goodreadsResFilename
+  let l = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
+  return l
