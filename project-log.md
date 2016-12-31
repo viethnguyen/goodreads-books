@@ -79,4 +79,6 @@ $ curl
 This query get all information about the books in the `read` shelf. 
 - To do HTTP client, `wreq` is an option for Haskell. 
 - How to pass the response from wreq to the main program? 
+- To parse XML file, probably use TagSoup? Read this tutorial, it's
+  helpful: https://hackage.haskell.org/package/tagsoup
 

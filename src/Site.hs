@@ -9,9 +9,7 @@ module Site
   ) where
 
 ------------------------------------------------------------------------------
-import Control.Applicative
 import Data.ByteString (ByteString)
-import Data.Map.Syntax (( ## ))
 import qualified Data.Text as T
 import qualified Heist.Interpreted as I
 import Snap.Core
@@ -20,6 +18,7 @@ import Snap.Snaplet.Heist
 import Snap.Util.FileServe
 import Network.Wreq
 import Control.Lens
+import Text.HTML.TagSoup
 
 ------------------------------------------------------------------------------
 import Application
@@ -48,9 +47,12 @@ goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
 
 -------------------------------------------------------------------------------
 -- | Experimental Wreq query to Goodreads
-response :: IO ByteString
-response = do
+testWreq :: IO ()
+testWreq = do
   key <- goodreadsKey
-  r <- get query 
-  return r
-  where query = "https://www.goodreads.com/review/list/5285276.xml?key=" + key +"&v=2?shelf=read"
+  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
+  let tags = parseTags  (r ^. responseBody)
+  putStrLn $ show tags 
+--  putStrLn $ "Response: " ++ show (r ^. responseBody)
+
+
