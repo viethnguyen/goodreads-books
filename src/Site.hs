@@ -59,7 +59,42 @@ saveGoodreadsResponseBody = do
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
 -- | A single review
-links = do
+bookReview = do
   tags <- parseTags <$> readFile goodreadsResFilename
   let l = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
   return l
+
+-------------------------------------------------------------------------------
+-- | Bood data type
+data Book = Book
+  { title :: String
+  , image_url :: String
+  , description :: String
+  , author :: String
+  , comment :: String
+  } deriving (Eq, Show)
+
+-- | parse a review to get book data
+parseReview :: [Tag String] -> Book
+parseReview rev =
+  let title = case maybeTagText $ head $ takeWhile (~/= ("</title>" :: String)) $ drop 1 $ dropWhile (~/= ("<title>"::String)) rev of
+        Nothing -> ""
+        Just s -> (s :: String)
+      image_url = case maybeTagText $ head $ takeWhile (~/= ("</image_url>" :: String)) $ drop 1 $ dropWhile (~/= ("<image_url>"::String)) rev of
+        Nothing -> ""
+        Just s -> (s :: String)
+      description = case maybeTagText $ head $ takeWhile (~/= ("</description>" :: String)) $ drop 1 $ dropWhile (~/= ("<description>"::String)) rev of
+        Nothing -> ""
+        Just s -> (s :: String)
+      author = case maybeTagText $ head $ takeWhile (~/= ("</name>" :: String)) $ drop 1 $ dropWhile (~/= ("<name>"::String)) rev of
+        Nothing -> ""
+        Just s -> (s :: String)
+      comment = case maybeTagText $ head $ takeWhile (~/= ("</body>" :: String)) $ drop 1 $ dropWhile (~/= ("<body>"::String)) rev of
+        Nothing -> ""
+        Just s -> (s :: String)
+                  
+
+  in Book title image_url description author comment 
+  
+  
+  

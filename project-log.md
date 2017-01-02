@@ -90,3 +90,7 @@ This query get all information about the books in the `read` shelf.
   URL, book description, my comments.
 - To be easy, save a Goodread response into a file first, then using
   TagSoup on that file. 
+
+# Jan 2, 2017
+
+- Parse a review to get book info 
