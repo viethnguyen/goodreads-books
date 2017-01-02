@@ -93,4 +93,20 @@ This query get all information about the books in the `read` shelf.
 
 # Jan 2, 2017
 
-- Parse a review to get book info 
+- Use tagsoup to parse a review to get book info. 
+- Probably use `xmlhtml` library is more efficient. 
+- Now needs to input book info into a Heist template. In the previous
+  version, `Text.Templating.Heist` is used
+  (https://hackage.haskell.org/package/heist-0.7.0/docs/Text-Templating-Heist.html). But
+  from `Heist 1.0`, the functions are moved to `Heist.Interpreted` (https://hackage.haskell.org/package/heist-1.0.1.0/docs/Heist-Interpreted.html).
+- Heist tutorial about Compiled Heist:
+  http://snapframework.com/docs/tutorials/compiled-splices. This is
+  after version 0.10 
+- An example of using interprested Heist:
+  https://github.com/ericrasmussen/snap-heist-examples/blob/master/src/handlers/Conditional.hs
+  
+- See this code, it binds data from code into a Heist template: 
+https://github.com/ericrasmussen/snap-heist-examples/blob/master/src/handlers/Loop.hs
+and
+https://github.com/ericrasmussen/snap-heist-examples/blob/master/snaplets/heist/templates/loop/_tutorials.tpl
+

@@ -12,6 +12,7 @@ module Site
 import qualified Data.ByteString.Lazy as BLI
 import Data.ByteString (ByteString)
 import qualified Data.Text as T
+import Heist
 import qualified Heist.Interpreted as I
 import Snap.Core
 import Snap.Snaplet
@@ -20,6 +21,7 @@ import Snap.Util.FileServe
 import Network.Wreq
 import Control.Lens
 import Text.HTML.TagSoup
+import Text.XmlHtml
 
 ------------------------------------------------------------------------------
 import Application
@@ -95,6 +97,38 @@ parseReview rev =
                   
 
   in Book title image_url description author comment 
-  
-  
-  
+
+-- | test
+books :: [Book]
+books = [
+  Book {
+      title = "Learn You a Haskell",
+      image_url = " ",
+      description = "Beginner book in Haskell",
+      author = "Miran Lipova",
+      comment = "a good beginner book"
+      } ] 
+      
+      
+
+-- | Snap Handler for the index page
+
+-- bookHandler :: Handler App App ()
+-- bookHandler = renderWithSplices "index" allBooksSplices
+
+-- allBooksSplices :: Splices (SnapletISplice App)
+-- allBooksSplices = "allBooks" ## (renderBooks books)
+
+-- renderBooks :: [Book] -> SnapletISplice App
+-- renderBooks = I.mapSplices ## I.runChildrenWith . splicesFromBook
+
+
+
+-- splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
+-- splicesFromBook b = do
+--   "bookTitle" ## I.textSplice (T.pack $ title b)
+--   "bookImageUrl" ## I.textSplice (T.pack $ image_url b)
+--   "bookDescription" ## I.textSplice (T.pack $ description b)
+--   "bookAuthor" ## I.textSplice (T.pack $ author b)
+--   "bookComment" ## I.textSplice (T.pack $ comment b)
+
