@@ -110,3 +110,9 @@ https://github.com/ericrasmussen/snap-heist-examples/blob/master/src/handlers/Lo
 and
 https://github.com/ericrasmussen/snap-heist-examples/blob/master/snaplets/heist/templates/loop/_tutorials.tpl
 
+# Jan 3, 2017 
+
+- In order to use the operator `(##)`, I need to import
+  `Data.Map.Syntax`. 
+
+

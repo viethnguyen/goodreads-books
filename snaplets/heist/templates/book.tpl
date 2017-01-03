@@ -19,8 +19,8 @@
       <tbody>
 	<allBooks>
 	  <tr>
-	    <td><bookTitle/></td>
 	    <td><bookImageUrl/></td>
+	    <td><bookTitle/></td>	    
 	    <td><bookDescription/></td>
 	    <td><bookAuthor/></td>
 	    <td><bookComment/></td>
