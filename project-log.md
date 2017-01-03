@@ -115,4 +115,12 @@ https://github.com/ericrasmussen/snap-heist-examples/blob/master/snaplets/heist/
 - In order to use the operator `(##)`, I need to import
   `Data.Map.Syntax`. 
 
+- Able to parse a Goodreads response to get a collection of book
+  infos. But this exists inside an IO, how do I pass this into Snap
+  App Handler? 
+  
+- Probably to read data from file or db, need another approach, see
+  the code:
+  https://github.com/bonus500/sc2blog/blob/master/src/Site.hs
+  
 

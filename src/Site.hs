@@ -62,9 +62,20 @@ saveGoodreadsResponseBody = do
 bookReview :: IO [Tag String]
 bookReview = do
   tags <- parseTags <$> readFile goodreadsResFilename
-  let l = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
-  return l
+  let br = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
+  return br
 
+-- | All reviews inside a response
+bookReviews :: IO [[Tag String]]
+bookReviews = do
+  tags <- parseTags <$> readFile goodreadsResFilename
+  let brs = go [] tags
+  return brs 
+  where go bs [] = bs
+        go bs tags = let br = takeWhile (~/= ("</review>"::String)) $ drop 1 $ dropWhile (~/= ("<review>"::String)) tags
+                         remain = drop 1 $ dropWhile (~/= ("</review>"::String)) tags
+                      in if (length br == 0) then go bs remain else go (br : bs) remain
+  
 -------------------------------------------------------------------------------
 -- | Bood data type
 data Book = Book
@@ -129,6 +140,14 @@ allBooksSplices = "allBooks" ## (renderBooks books)
 renderBooks :: [Book] -> SnapletISplice App
 renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
 
+-- renderBooks2 :: SnapletISplice App
+-- renderBooks2 = do
+--   liftIO $ do
+--     brs <- bookReviews
+--     return brs
+--   let bs = map parseReview brs
+--   I.mapSplices (I.runChildrenWith . splicesFromBook) bs
+  
 splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
 splicesFromBook b = do
   "bookTitle" ## I.textSplice (T.pack $ title b)
