@@ -140,6 +140,10 @@ renderWithSplices
      ByteString -> Splices (SnapletISplice b) -> Handler b v ()
   	-- Defined in ‘Snap.Snaplet.Heist’
 
+```
 
-
-
+- FOUND THE SOLUTION! I only need to use `liftIO` in the bookHandler
+  (of type `Handler App App ()`) to "get info out of IO" then pass it
+  to the splice function. 
+  
+  
