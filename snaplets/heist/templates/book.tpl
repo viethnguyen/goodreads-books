@@ -1,10 +1,6 @@
 <apply template="base">
-  <bind tag="header">
-    <h1>Viet Nguyen.</h1>
-  </bind>
-  Some in-between text.
   <bind tag="main">
-    <h1>Home Page</h1>
+    <h1>Viet Nguyen's books</h1>
     <p>Welcome to my book collection.</p>
     <table style="width:100%">
       <thead>
@@ -19,7 +15,7 @@
       <tbody>
 	<allBooks>
 	  <tr>
-	    <td><bookImageUrl/></td>
+	    <td><img src=${bookImageUrl} style="width:100px;height:150px;"></td>
 	    <td><bookTitle/></td>	    
 	    <td><bookDescription/></td>
 	    <td><bookAuthor/></td>

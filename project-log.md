@@ -146,4 +146,7 @@ renderWithSplices
   (of type `Handler App App ()`) to "get info out of IO" then pass it
   to the splice function. 
   
+- Some bugs need to be fixed: include a css file, remove html tag from
+  the goodreads responses. 
+  
   

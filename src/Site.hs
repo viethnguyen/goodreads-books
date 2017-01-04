@@ -56,7 +56,7 @@ goodreadsResFilename = "src/.goodreadsresponse"
 saveGoodreadsResponseBody :: IO ()
 saveGoodreadsResponseBody = do
   key <- goodreadsKey
-  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2?shelf=read")
+  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2&shelf=read")
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
 -- | A single review
@@ -137,12 +137,10 @@ books = [
       }
   ] 
       
-      
-
--- | Snap Handler for the index page
 
 bookHandler :: Handler App App ()
 bookHandler = do
+  liftIO saveGoodreadsResponseBody
   brs <- liftIO bookReviews
   let bs = map parseReview brs
   renderWithSplices "book" (allBooksSplices bs)
@@ -160,25 +158,6 @@ splicesFromBook b = do
   "bookDescription" ## I.textSplice (T.pack $ description b)
   "bookAuthor" ## I.textSplice (T.pack $ author b)
   "bookComment" ## I.textSplice (T.pack $ comment b)
-
--- booksSplice :: I.Splice AppHandler
--- booksSplice = do
---   brs <- liftIO $ bookReviews
---   let books = map parseReview brs
---   I.mapSplices mkBookSplice books
-
-
--- -- | Take a book and returns a splice with its info
--- mkBookSplice :: Book -> I.Splice AppHandler
--- mkBookSplice b = I.runChildrenWithText $ do 
---   "bookTitle" ## (T.pack $ title b)
---   "bookImageUrl" ## (T.pack $ image_url b)
---   "bookDescription" ## (T.pack $ description b)
---   "bookAuthor" ## (T.pack $ author b)
---   "bookComment" ## (T.pack $ comment b)
-
--- bookHandler :: Handler App App ()
--- bookHandler = render "book" 
 
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
