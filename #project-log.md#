@@ -140,6 +140,6 @@ renderWithSplices
      ByteString -> Splices (SnapletISplice b) -> Handler b v ()
   	-- Defined in ‘Snap.Snaplet.Heist’
 
-
+```
 
 

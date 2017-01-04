@@ -22,7 +22,8 @@ import Snap.Util.FileServe
 import Network.Wreq
 import Control.Lens
 import Text.HTML.TagSoup
-import Text.XmlHtml
+import Text.XmlHtml hiding (render)
+import Control.Monad.IO.Class
 
 ------------------------------------------------------------------------------
 import Application
@@ -89,22 +90,31 @@ data Book = Book
 -- | parse a review to get book data
 parseReview :: [Tag String] -> Book
 parseReview rev =
-  let t = case maybeTagText $ head $ takeWhile (~/= ("</title>" :: String)) $ drop 1 $ dropWhile (~/= ("<title>"::String)) rev of
-        Nothing -> ""
-        Just s -> (s :: String)
-      iu = case maybeTagText $ head $ takeWhile (~/= ("</image_url>" :: String)) $ drop 1 $ dropWhile (~/= ("<image_url>"::String)) rev of
-        Nothing -> ""
-        Just s -> (s :: String)
-      d = case maybeTagText $ head $ takeWhile (~/= ("</description>" :: String)) $ drop 1 $ dropWhile (~/= ("<description>"::String)) rev of
-        Nothing -> ""
-        Just s -> (s :: String)
-      a = case maybeTagText $ head $ takeWhile (~/= ("</name>" :: String)) $ drop 1 $ dropWhile (~/= ("<name>"::String)) rev of
-        Nothing -> ""
-        Just s -> (s :: String)
-      c = case maybeTagText $ head $ takeWhile (~/= ("</body>" :: String)) $ drop 1 $ dropWhile (~/= ("<body>"::String)) rev of
-        Nothing -> ""
-        Just s -> (s :: String)
-                  
+  let t = case takeWhile (~/= ("</title>" :: String)) $ drop 1 $ dropWhile (~/= ("<title>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
+      iu = case takeWhile (~/= ("</image_url>" :: String)) $ drop 1 $ dropWhile (~/= ("<image_url>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
+      d = case takeWhile (~/= ("</description>" :: String)) $ drop 1 $ dropWhile (~/= ("<description>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
+      a = case takeWhile (~/= ("</name>" :: String)) $ drop 1 $ dropWhile (~/= ("<name>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
+      c = case takeWhile (~/= ("</body>" :: String)) $ drop 1 $ dropWhile (~/= ("<body>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
 
   in Book t iu d a c 
 
@@ -132,22 +142,17 @@ books = [
 -- | Snap Handler for the index page
 
 bookHandler :: Handler App App ()
-bookHandler = renderWithSplices "book" allBooksSplices
+bookHandler = do
+  brs <- liftIO bookReviews
+  let bs = map parseReview brs
+  renderWithSplices "book" (allBooksSplices bs)
 
-allBooksSplices :: Splices (SnapletISplice App)
-allBooksSplices = "allBooks" ## (renderBooks books)
+allBooksSplices :: [Book] -> Splices (SnapletISplice App)
+allBooksSplices bs = "allBooks" ## (renderBooks bs)
 
 renderBooks :: [Book] -> SnapletISplice App
 renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
 
--- renderBooks2 :: SnapletISplice App
--- renderBooks2 = do
---   liftIO $ do
---     brs <- bookReviews
---     return brs
---   let bs = map parseReview brs
---   I.mapSplices (I.runChildrenWith . splicesFromBook) bs
-  
 splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
 splicesFromBook b = do
   "bookTitle" ## I.textSplice (T.pack $ title b)
@@ -156,6 +161,25 @@ splicesFromBook b = do
   "bookAuthor" ## I.textSplice (T.pack $ author b)
   "bookComment" ## I.textSplice (T.pack $ comment b)
 
+-- booksSplice :: I.Splice AppHandler
+-- booksSplice = do
+--   brs <- liftIO $ bookReviews
+--   let books = map parseReview brs
+--   I.mapSplices mkBookSplice books
+
+
+-- -- | Take a book and returns a splice with its info
+-- mkBookSplice :: Book -> I.Splice AppHandler
+-- mkBookSplice b = I.runChildrenWithText $ do 
+--   "bookTitle" ## (T.pack $ title b)
+--   "bookImageUrl" ## (T.pack $ image_url b)
+--   "bookDescription" ## (T.pack $ description b)
+--   "bookAuthor" ## (T.pack $ author b)
+--   "bookComment" ## (T.pack $ comment b)
+
+-- bookHandler :: Handler App App ()
+-- bookHandler = render "book" 
+
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
-routes = [("/", bookHandler)]
+routes = [("/book", bookHandler)]
