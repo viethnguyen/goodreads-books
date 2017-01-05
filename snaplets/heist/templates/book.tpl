@@ -1,8 +1,11 @@
 <apply template="base">
   <bind tag="main">
-    <h1>Viet Nguyen's books</h1>
-    <p>Welcome to my book collection.</p>
-    <table style="width:100%">
+    <center>
+      <h1>Viet Nguyen's books</h1>
+    </center>
+    <p>Welcome to my book collection. The books on this page is
+    retrieved from my Goodreads database. </p>
+    <table style="width:100%" cellpadding="10">
       <thead>
        <tr>
 	 <th>Image</th>

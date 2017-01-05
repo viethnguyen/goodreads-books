@@ -56,7 +56,7 @@ goodreadsResFilename = "src/.goodreadsresponse"
 saveGoodreadsResponseBody :: IO ()
 saveGoodreadsResponseBody = do
   key <- goodreadsKey
-  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2&shelf=read")
+  r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2&shelf=read&sort=date_read&per_page=200")
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
 -- | A single review
@@ -71,7 +71,7 @@ bookReviews :: IO [[Tag String]]
 bookReviews = do
   tags <- parseTags <$> readFile goodreadsResFilename
   let brs = go [] tags
-  return brs 
+  return $ reverse brs 
   where go bs [] = bs
         go bs tags = let br = takeWhile (~/= ("</review>"::String)) $ drop 1 $ dropWhile (~/= ("<review>"::String)) tags
                          remain = drop 1 $ dropWhile (~/= ("</review>"::String)) tags
@@ -161,4 +161,5 @@ splicesFromBook b = do
 
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
-routes = [("/book", bookHandler)]
+routes = [ ("/book", bookHandler)
+         , ("media", serveDirectory "static/media")]

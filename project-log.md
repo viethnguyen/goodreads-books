@@ -150,3 +150,21 @@ renderWithSplices
   the goodreads responses. 
   
   
+# Jan 5, 2017 
+
+- Fixed the bug of include a css file. I put my css file in the folder
+  `static/media/css/main.css`, then I need to specify in Snap code the
+  routes accordingly
+  
+```haskell
+routes :: [(ByteString, Handler App App ())]
+routes = [ ("/book", bookHandler)
+         , ("media", serveDirectory "static/media")]
+```
+
+then in Snap HTML template I can specify the path to the css file:
+
+```html
+    <link href="media/css/worg.css" rel="stylesheet" type="text/css"
+    title="Worg" />
+```

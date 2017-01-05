@@ -151,18 +151,22 @@
     margin: .4em;
   }
 
-  table {
-    border: none;
-  }
+  /* table { */
+  /*   border: none; */
+  /* } */
 
-  td {
-    border: none;
-  }
+  /* td { */
+  /*   border: none; */
+  /* } */
 
-  th {
-    border: none;
-  }
+  /* th { */
+  /*   border: none; */
+  /* } */
 
+  table, th, td {
+      border: 1px solid black;
+  }
+  
   code {
     font-size: 100%;
     color: black;

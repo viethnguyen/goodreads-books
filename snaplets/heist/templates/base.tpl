@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Home Page</title>
-    <!-- <link href="/worg.css" rel="stylesheet" type="text/css" title="Worg" /> -->
+    <link href="media/css/worg.css" rel="stylesheet" type="text/css" title="Worg" />
   </head>
   <body>
     <div id="header">
