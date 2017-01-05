@@ -123,7 +123,7 @@ https://github.com/ericrasmussen/snap-heist-examples/blob/master/snaplets/heist/
   the code:
   https://github.com/bonus500/sc2blog/blob/master/src/Site.hs
 
-# Jan 4, 2017 
+# Jan 4, 2017 nn
 
 - Still trying to connect data read from file to Snap. 
 
@@ -168,3 +168,12 @@ then in Snap HTML template I can specify the path to the css file:
     <link href="media/css/worg.css" rel="stylesheet" type="text/css"
     title="Worg" />
 ```
+
+- Side note: to deploy to Heroku, see this tutorial: http://adit.io/posts/2013-04-15-making-a-website-with-haskell.html
+
+- To remove html tag from the goodreads response, probably
+  `Hakyll.Web.Html` might be good: https://hackage.haskell.org/package/hakyll-4.1.2.1/docs/Hakyll-Web-Html.html
+
+- On second thought, the response doesn't have to be stripped off the
+  tag. What I want is that the final render page will display those
+  HTML tag correctly. 

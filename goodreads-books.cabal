@@ -36,7 +36,8 @@ Executable goodreads-books
     time                      >= 1.1     && < 1.7,
     xmlhtml                   >= 0.1,
     wreq,
-    tagsoup                 
+    tagsoup
+
 
   if flag(old-base)
     build-depends:
