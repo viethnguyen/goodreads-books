@@ -91,6 +91,7 @@ data Book = Book
   , description :: String
   , author :: String
   , comment :: String
+  , link :: String 
   } deriving (Eq, Show)
 
 -- | parse a review to get book data
@@ -121,8 +122,12 @@ parseReview rev =
         t : _ -> case maybeTagText t of
           Nothing -> ""
           Just s -> (s :: String)
-
-  in Book t iu d a c 
+      l = case takeWhile (~/= ("</link>" :: String)) $ drop 1 $ dropWhile (~/= ("<link>"::String)) rev of
+        [ ] -> ""
+        t : _ -> case maybeTagText t of
+          Nothing -> ""
+          Just s -> (s :: String)
+  in Book t iu d a c l
 
 -- | test
 books :: [Book]
@@ -132,14 +137,16 @@ books = [
       image_url = " ",
       description = "Beginner book in Haskell",
       author = "Miran Lipova",
-      comment = "a good beginner book"
+      comment = "a good beginner book",
+      link = ""
       },
   Book {
       title = "Parallel and Concurrent Programming in Haskell",
       image_url = " ",
       description = "Good book in parallel and concurrent Haskell",
       author = "Simon Marlow",
-      comment = "nice, short book"
+      comment = "nice, short book",
+      link = ""
       }
   ] 
       
@@ -155,25 +162,17 @@ allBooksSplices :: [Book] -> Splices (SnapletISplice App)
 allBooksSplices bs = "allBooks" ## (renderBooks bs)
 
 renderBooks :: [Book] -> SnapletISplice App
--- renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
-renderBooks = I.mapSplices $ I.runChildrenWithText . splicesFromBook2
+renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
 
 
 splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
 splicesFromBook b = do
-  "bookTitle" ## I.textSplice (T.pack $ title b)
-  "bookImageUrl" ## I.textSplice (T.pack $ image_url b)
-  "bookDescription" ## I.textSplice (T.pack $ description b)
-  "bookAuthor" ## I.textSplice (T.pack $ author b)
-  "bookComment" ## I.textSplice (T.pack $ comment b)
-
-splicesFromBook2 :: Book -> Splices T.Text
-splicesFromBook2 b = do
-  "bookTitle" ## T.pack $ stripTags $ title b
-  "bookImageUrl" ## T.pack $ stripTags $ image_url b
-  "bookDescription" ## T.pack $ stripTags $ description b
-  "bookAuthor" ## T.pack $ stripTags $ author b
-  "bookComment" ## T.pack $ stripTags $ comment b
+  "bookTitle" ## I.textSplice (T.pack $ stripTags $ title b)
+  "bookImageUrl" ## I.textSplice (T.pack $ stripTags $ image_url b)
+  "bookDescription" ## I.textSplice (T.pack $ stripTags $ description b)
+  "bookAuthor" ## I.textSplice (T.pack $ stripTags $ author b)
+  "bookComment" ## I.textSplice (T.pack $ stripTags $ comment b)
+  "bookLink" ## I.textSplice (T.pack $ stripTags $ link b)
 
 -- work around to strip tags
 stripTags :: String -> String
