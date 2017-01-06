@@ -3,8 +3,8 @@
     <center>
       <h1>Viet Nguyen's books</h1>
     </center>
-    <p>Welcome to my book collection. The books on this page is
-    retrieved from my Goodreads database. </p>
+    <p>Welcome to my book collection. The books on this page are
+    retrieved from my Goodreads database and sorted in the order I read (newest first). </p>
     <table style="width:100%" cellpadding="10">
       <thead>
        <tr>

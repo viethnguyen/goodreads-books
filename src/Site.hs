@@ -60,8 +60,8 @@ saveGoodreadsResponseBody = do
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
 -- | A single review
-bookReview :: IO [Tag String]
-bookReview = do
+sampleBookReview :: IO [Tag String]
+sampleBookReview = do
   tags <- parseTags <$> readFile goodreadsResFilename
   let br = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
   return br
@@ -76,6 +76,12 @@ bookReviews = do
         go bs tags = let br = takeWhile (~/= ("</review>"::String)) $ drop 1 $ dropWhile (~/= ("<review>"::String)) tags
                          remain = drop 1 $ dropWhile (~/= ("</review>"::String)) tags
                       in if (length br == 0) then go bs remain else go (br : bs) remain
+
+-- | A single book to test
+sampleBook :: IO Book
+sampleBook = do
+  br <- sampleBookReview
+  return $ parseReview br
   
 -------------------------------------------------------------------------------
 -- | Bood data type
@@ -149,7 +155,9 @@ allBooksSplices :: [Book] -> Splices (SnapletISplice App)
 allBooksSplices bs = "allBooks" ## (renderBooks bs)
 
 renderBooks :: [Book] -> SnapletISplice App
-renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
+-- renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
+renderBooks = I.mapSplices $ I.runChildrenWithText . splicesFromBook2
+
 
 splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
 splicesFromBook b = do
@@ -159,7 +167,23 @@ splicesFromBook b = do
   "bookAuthor" ## I.textSplice (T.pack $ author b)
   "bookComment" ## I.textSplice (T.pack $ comment b)
 
+splicesFromBook2 :: Book -> Splices T.Text
+splicesFromBook2 b = do
+  "bookTitle" ## T.pack $ stripTags $ title b
+  "bookImageUrl" ## T.pack $ stripTags $ image_url b
+  "bookDescription" ## T.pack $ stripTags $ description b
+  "bookAuthor" ## T.pack $ stripTags $ author b
+  "bookComment" ## T.pack $ stripTags $ comment b
+
+-- work around to strip tags
+stripTags :: String -> String
+stripTags s = foldr (++) [] $ map fromTagText $ filter pred $ parseTags s 
+  where pred (TagOpen _ _) = False
+        pred (TagClose _) = False
+        pred _ = True
+        
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
 routes = [ ("/book", bookHandler)
          , ("media", serveDirectory "static/media")]
+
