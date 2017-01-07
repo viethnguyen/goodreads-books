@@ -37,7 +37,8 @@ Executable goodreads-books
     xmlhtml                   >= 0.1,
     wreq,
     tagsoup,
-    directory
+    directory,
+    transformers
 
   if flag(old-base)
     build-depends:
