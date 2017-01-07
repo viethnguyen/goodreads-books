@@ -39,36 +39,54 @@ app =
     addRoutes routes
     return $ App h
 
+-- | The application's routes.
+routes :: [(ByteString, Handler App App ())]
+routes = [ ("/book", bookHandler)
+         , ("media", serveDirectory "static/media")]
+
+
 -------------------------------------------------------------------------------
--- | Read Goodreads key and password 
+-- | Read Goodreads key and password from a file 
 goodreadsKey :: IO String
 goodreadsKey = fmap (takeWhile (/= '\n')) $ readFile "src/.goodreadskey"
 
 goodreadsPass :: IO String
 goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
 
--------------------------------------------------------------------------------
--- | sample goodread response file name
+-- | Bood data type
+data Book = Book
+  { title :: String
+  , image_url :: String
+  , description :: String
+  , author :: String
+  , comment :: String
+  , link :: String 
+  } deriving (Eq, Show)
+
+-- | goodread response file name
 goodreadsResFilename :: FilePath
 goodreadsResFilename = "src/.goodreadsresponse"
 
--- | Use wreq to save response body from Goodreads 
+-- | Use wreq to save response body from Goodreads into a file 
 saveGoodreadsResponseBody :: IO ()
 saveGoodreadsResponseBody = do
+  -- Get Goodreads key 
   key <- goodreadsKey
+
+  -- Get all the read books 
   r <-  get ("https://www.goodreads.com/review/list/5285276.xml?key=" ++ key ++ "&v=2&shelf=read&sort=date_read&per_page=200")
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
 
--- | A single review
+-- | For testing, a sample book review. A book review is a collection of TagSoup tags between the two tags <review> and </review>
 sampleBookReview :: IO [Tag String]
 sampleBookReview = do
   tags <- parseTags <$> readFile goodreadsResFilename
   let br = takeWhile (~/= ("</review>"::String)) $ dropWhile (~/= ("<review>"::String)) tags
   return br
 
--- | All reviews inside a response
-bookReviews :: IO [[Tag String]]
-bookReviews = do
+-- | All reviews from the file in which we save the Goodreads response.
+getBookReviews :: IO [[Tag String]]
+getBookReviews = do
   tags <- parseTags <$> readFile goodreadsResFilename
   let brs = go [] tags
   return $ reverse brs 
@@ -83,16 +101,6 @@ sampleBook = do
   br <- sampleBookReview
   return $ parseReview br
   
--------------------------------------------------------------------------------
--- | Bood data type
-data Book = Book
-  { title :: String
-  , image_url :: String
-  , description :: String
-  , author :: String
-  , comment :: String
-  , link :: String 
-  } deriving (Eq, Show)
 
 -- | parse a review to get book data
 parseReview :: [Tag String] -> Book
@@ -129,7 +137,7 @@ parseReview rev =
           Just s -> (s :: String)
   in Book t iu d a c l
 
--- | test
+-- | test data, a list of Books 
 books :: [Book]
 books = [
   Book {
@@ -150,20 +158,20 @@ books = [
       }
   ] 
       
-
+-- | handler
 bookHandler :: Handler App App ()
 bookHandler = do
   liftIO saveGoodreadsResponseBody
-  brs <- liftIO bookReviews
+  brs <- liftIO getBookReviews 
   let bs = map parseReview brs
   renderWithSplices "book" (allBooksSplices bs)
 
+-- | convert a list of books to splices 
 allBooksSplices :: [Book] -> Splices (SnapletISplice App)
 allBooksSplices bs = "allBooks" ## (renderBooks bs)
 
 renderBooks :: [Book] -> SnapletISplice App
 renderBooks = I.mapSplices $ I.runChildrenWith . splicesFromBook
-
 
 splicesFromBook ::Monad n => Book -> Splices (I.Splice n)
 splicesFromBook b = do
@@ -174,15 +182,11 @@ splicesFromBook b = do
   "bookComment" ## I.textSplice (T.pack $ stripTags $ comment b)
   "bookLink" ## I.textSplice (T.pack $ stripTags $ link b)
 
--- work around to strip tags
+-- | strip all HTML tags inside a string 
 stripTags :: String -> String
 stripTags s = foldr (++) [] $ map fromTagText $ filter pred $ parseTags s 
   where pred (TagOpen _ _) = False
         pred (TagClose _) = False
         pred _ = True
         
--- | The application's routes.
-routes :: [(ByteString, Handler App App ())]
-routes = [ ("/book", bookHandler)
-         , ("media", serveDirectory "static/media")]
 

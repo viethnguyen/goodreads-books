@@ -12,7 +12,6 @@
 	 <th>Book cover</th>
 	 <th>Title</th>
 	 <th>Description</th>
-	 <th>Author</th>
 	 <th>My comments</th>
        </tr>
       </thead>
@@ -20,9 +19,8 @@
 	<allBooks>
 	  <tr>
 	    <td><img src=${bookImageUrl} style="width:100px;height:150px;"></td>
-	    <td><a href=${bookLink}><bookTitle/></a></td>	    
+	    <td><a href=${bookLink}><bookTitle/></a> - <bookAuthor/></td>	    
 	    <td><bookDescription/></td>
-	    <td><bookAuthor/></td>
 	    <td><bookComment/></td>
 	  </tr>
 

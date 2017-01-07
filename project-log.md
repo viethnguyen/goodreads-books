@@ -177,3 +177,16 @@ then in Snap HTML template I can specify the path to the css file:
 - On second thought, the response doesn't have to be stripped off the
   tag. What I want is that the final render page will display those
   HTML tag correctly. 
+
+- Or take a look at `Web.Encoding`, the decodeHtml
+  function. (http://hackage.haskell.org/package/web-encodings-0.3.0.2/docs/Web-Encodings.html)
+  
+# Jan 6, 2017 
+
+- I tried to strip off tags like `<br/>` by writing a custom TagSoup
+  code. But without them, the format of the text looks weird. But it
+  seems ok to me. 
+
+- I added the link to Goodreads for each book. 
+
+# Jan 7, 2017 

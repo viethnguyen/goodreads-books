@@ -58,10 +58,10 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="programminglanguage" exclusive="false" review_shelf_id="1509163117" sortable="false" />
     <shelf name="haskell" exclusive="false" review_shelf_id="1509163056" sortable="false" />
     <shelf name="computer" exclusive="false" review_shelf_id="1509163083" sortable="false" />
     <shelf name="read-2016" exclusive="false" review_shelf_id="1509164188" sortable="false" />
+    <shelf name="programminglanguage" exclusive="false" review_shelf_id="1509163117" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -131,9 +131,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2016" exclusive="false" review_shelf_id="1509163992" sortable="false" />
     <shelf name="stephen-king" exclusive="false" review_shelf_id="1509163713" sortable="false" />
     <shelf name="horror" exclusive="false" review_shelf_id="1509163737" sortable="false" />
-    <shelf name="read-2016" exclusive="false" review_shelf_id="1509163992" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -274,8 +274,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="politics" exclusive="false" review_shelf_id="1397236994" sortable="false" />
     <shelf name="read-2016" exclusive="false" review_shelf_id="1397237067" sortable="false" />
+    <shelf name="politics" exclusive="false" review_shelf_id="1397236994" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -346,9 +346,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2016" exclusive="false" review_shelf_id="1304994251" sortable="false" />
     <shelf name="sci-fi" exclusive="false" review_shelf_id="1304994302" sortable="false" />
     <shelf name="neal-stephenson" exclusive="false" review_shelf_id="1304994353" sortable="false" />
-    <shelf name="read-2016" exclusive="false" review_shelf_id="1304994251" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -418,8 +418,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="self-help" exclusive="false" review_shelf_id="1232853165" sortable="false" />
     <shelf name="greg-mckeown" exclusive="false" review_shelf_id="1232852983" sortable="false" />
+    <shelf name="self-help" exclusive="false" review_shelf_id="1232853165" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -490,11 +490,11 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2016" exclusive="false" review_shelf_id="1185723034" sortable="false" />
+    <shelf name="nonfiction" exclusive="false" review_shelf_id="1185723298" sortable="false" />
     <shelf name="walter-isaacson" exclusive="false" review_shelf_id="1185723205" sortable="false" />
     <shelf name="five-star" exclusive="false" review_shelf_id="1185723484" sortable="false" />
     <shelf name="biography" exclusive="false" review_shelf_id="1185723378" sortable="false" />
-    <shelf name="nonfiction" exclusive="false" review_shelf_id="1185723298" sortable="false" />
-    <shelf name="read-2016" exclusive="false" review_shelf_id="1185723034" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -548,8 +548,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/776.Michael_Lewis]]></link>
 <average_rating>4.14</average_rating>
-<ratings_count>348723</ratings_count>
-<text_reviews_count>20184</text_reviews_count>
+<ratings_count>348731</ratings_count>
+<text_reviews_count>20185</text_reviews_count>
 </author>
 </authors>
   <published>2015</published>
@@ -565,8 +565,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="micheal-lewis" exclusive="false" review_shelf_id="1178950479" sortable="false" />
     <shelf name="read-2016" exclusive="false" review_shelf_id="1178950352" sortable="false" />
+    <shelf name="micheal-lewis" exclusive="false" review_shelf_id="1178950479" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -637,8 +637,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2015" exclusive="false" review_shelf_id="1160634081" sortable="false" />
     <shelf name="matthew-fitzsimmons" exclusive="false" review_shelf_id="1160634317" sortable="false" />
+    <shelf name="read-2015" exclusive="false" review_shelf_id="1160634081" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -783,8 +783,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="five-star" exclusive="false" review_shelf_id="995037933" sortable="false" />
     <shelf name="start-up" exclusive="false" review_shelf_id="995266510" sortable="false" />
+    <shelf name="five-star" exclusive="false" review_shelf_id="995037933" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -980,7 +980,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/12455.Thomas_Harris]]></link>
 <average_rating>4.02</average_rating>
-<ratings_count>637894</ratings_count>
+<ratings_count>637895</ratings_count>
 <text_reviews_count>10127</text_reviews_count>
 </author>
 </authors>
@@ -1051,7 +1051,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/12455.Thomas_Harris]]></link>
 <average_rating>4.02</average_rating>
-<ratings_count>637894</ratings_count>
+<ratings_count>637895</ratings_count>
 <text_reviews_count>10127</text_reviews_count>
 </author>
 </authors>
@@ -1068,8 +1068,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2015" exclusive="false" review_shelf_id="877075859" sortable="false" />
     <shelf name="thomas-harris" exclusive="false" review_shelf_id="877075766" sortable="false" />
+    <shelf name="read-2015" exclusive="false" review_shelf_id="877075859" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1210,8 +1210,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2014" exclusive="false" review_shelf_id="772481816" sortable="false" />
     <shelf name="nonfiction" exclusive="false" review_shelf_id="772481747" sortable="false" />
+    <shelf name="read-2014" exclusive="false" review_shelf_id="772481816" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1636,8 +1636,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="five-star" exclusive="false" review_shelf_id="712507687" sortable="false" />
     <shelf name="history" exclusive="false" review_shelf_id="712507639" sortable="false" />
+    <shelf name="five-star" exclusive="false" review_shelf_id="712507687" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1779,9 +1779,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="nonfiction" exclusive="false" review_shelf_id="695575668" sortable="false" />
     <shelf name="read-2014" exclusive="false" review_shelf_id="695575583" sortable="false" />
     <shelf name="phd" exclusive="false" review_shelf_id="695575638" sortable="false" />
-    <shelf name="nonfiction" exclusive="false" review_shelf_id="695575668" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1819,7 +1819,7 @@
   <publication_year>2013</publication_year>
   <publication_month>11</publication_month>
   <average_rating>3.71</average_rating>
-  <ratings_count>1567</ratings_count>
+  <ratings_count>1568</ratings_count>
   <description>&lt;b&gt;Behind the bitter rivalry between Apple and Google—and how it’s reshaping the way we think about technology&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;The rise of smartphones and tablets has altered the business of making computers. At the center of this change are Apple and Google, two companies whose philosophies, leaders, and commercial acumen have steamrolled the competition. In the age of the Android and the iPad, these corporations are locked in a feud that will play out not just in the marketplace but in the courts and on screens around the world.&lt;br /&gt;     Fred Vogelstein has reported on this rivalry for more than a decade and has rare access to its major players. In &lt;i&gt;Dogfight&lt;/i&gt;, he takes us into the offices and board rooms where company dogma translates into ruthless business; behind outsize personalities like Steve Jobs, Apple’s now-lionized CEO, and Eric Schmidt, Google’s executive chairman; and inside the deals, lawsuits, and allegations that mold the way we communicate. Apple and Google are poaching each other’s employees. They bid up the price of each other’s acquisitions for spite, and they forge alliances with major players like Facebook and Microsoft in pursuit of market dominance.&lt;br /&gt;     &lt;i&gt;Dogfight &lt;/i&gt;reads like a novel: vivid nonfiction with never-before-heard details. This is more than a story about what devices will replace our phones and laptops. It’s about who will control the content on those devices and where that content will come from—about the future of media in Silicon Valley, New York, and Hollywood.&lt;br /&gt;</description>
 <authors>
 <author>
@@ -1834,7 +1834,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/6922203.Fred_Vogelstein]]></link>
 <average_rating>3.71</average_rating>
-<ratings_count>1569</ratings_count>
+<ratings_count>1570</ratings_count>
 <text_reviews_count>157</text_reviews_count>
 </author>
 </authors>
@@ -1995,9 +1995,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="finance" exclusive="false" review_shelf_id="641421188" sortable="false" />
     <shelf name="five-star" exclusive="false" review_shelf_id="641421115" sortable="false" />
     <shelf name="george-clason" exclusive="false" review_shelf_id="641586386" sortable="false" />
-    <shelf name="finance" exclusive="false" review_shelf_id="641421188" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2108,7 +2108,7 @@
   <publication_year>2013</publication_year>
   <publication_month>7</publication_month>
   <average_rating>4.07</average_rating>
-  <ratings_count>18635</ratings_count>
+  <ratings_count>18636</ratings_count>
   <description>&lt;b&gt;Daniel Silva delivers another spectacular thriller starring Gabriel Allon: The English Girl.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;When a beautiful young British woman vanishes on the island of Corsica, a prime minister's career is threatened with destruction. Allon, the wayward son of Israeli intelligence, is thrust into a game of shadows where nothing is what it seems...and where the only thing more dangerous than his enemies might be the truth._&lt;br /&gt;&lt;br /&gt;Silva's work has captured the imagination of millions worldwide. His #1 New York Times bestselling series, which chronicles the adventures of art-restorer and master spy Gabriel Allon, has earned the praise of readers and reviewers everywhere. This captivating new page-turner from the undisputed master of spy fiction is sure to thrill new and old fans alike.</description>
 <authors>
 <author>
@@ -2140,9 +2140,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="daniel-silva" exclusive="false" review_shelf_id="601639968" sortable="false" />
     <shelf name="fiction" exclusive="false" review_shelf_id="601640021" sortable="false" />
     <shelf name="gabriel-allon" exclusive="false" review_shelf_id="601640104" sortable="false" />
+    <shelf name="daniel-silva" exclusive="false" review_shelf_id="601639968" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2213,10 +2213,10 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2014" exclusive="false" review_shelf_id="593173846" sortable="false" />
-    <shelf name="five-star" exclusive="false" review_shelf_id="593173938" sortable="false" />
     <shelf name="nonfiction" exclusive="false" review_shelf_id="596791785" sortable="false" />
     <shelf name="jaron-lanier" exclusive="false" review_shelf_id="596791723" sortable="false" />
+    <shelf name="read-2014" exclusive="false" review_shelf_id="593173846" sortable="false" />
+    <shelf name="five-star" exclusive="false" review_shelf_id="593173938" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2270,7 +2270,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/585.John_Steinbeck]]></link>
 <average_rating>3.89</average_rating>
-<ratings_count>2742793</ratings_count>
+<ratings_count>2742806</ratings_count>
 <text_reviews_count>71998</text_reviews_count>
 </author>
 </authors>
@@ -2326,7 +2326,7 @@
   <publication_year>2011</publication_year>
   <publication_month>8</publication_month>
   <average_rating>3.69</average_rating>
-  <ratings_count>105446</ratings_count>
+  <ratings_count>105447</ratings_count>
   <description>&lt;i&gt;An alternative cover edition for this ISBN can be found &lt;a href="https://www.goodreads.com/book/show/25512303-the-sense-of-an-ending"&gt;here&lt;/a&gt;&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;Tony Webster and his clique first met Adrian Finn at school. Sex-hungry and book-hungry, they would navigate the girl-less sixth form together, trading in affectations, in-jokes, rumour and wit. Maybe Adrian was a little more serious than the others, certainly more intelligent, but they all swore to stay friends for life.&lt;br /&gt;Now Tony is retired. He's had a career and a single marriage, a calm divorce. He's certainly never tried to hurt anybody. Memory, though, is imperfect. It can always throw up surprises, as a lawyer's letter is about to prove.</description>
 <authors>
 <author>
@@ -2358,9 +2358,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="julian-barnes" exclusive="false" review_shelf_id="477072379" sortable="false" />
-    <shelf name="five-star" exclusive="false" review_shelf_id="477072288" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="477072309" sortable="false" />
+    <shelf name="five-star" exclusive="false" review_shelf_id="477072288" sortable="false" />
+    <shelf name="julian-barnes" exclusive="false" review_shelf_id="477072379" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2502,9 +2502,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2013" exclusive="false" review_shelf_id="474961340" sortable="false" />
     <shelf name="classic" exclusive="false" review_shelf_id="474961423" sortable="false" />
     <shelf name="peter-benchley" exclusive="false" review_shelf_id="474961402" sortable="false" />
-    <shelf name="read-2013" exclusive="false" review_shelf_id="474961340" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2542,7 +2542,7 @@
   <publication_year>1987</publication_year>
   <publication_month/>
   <average_rating>3.99</average_rating>
-  <ratings_count>204940</ratings_count>
+  <ratings_count>204944</ratings_count>
   <description>An acclaimed bestseller and international sensation, Patrick Suskind's classic novel provokes a terrifying examination of what happens when one man's indulgence in his greatest passion — his sense of smell — leads to murder.&lt;br /&gt;&lt;br /&gt;In the slums of eighteenth-century France, the infant Jean-Baptiste Grenouille is born with one sublime gift — an absolute sense of smell. As a boy, he lives to decipher the odors of Paris, and apprentices himself to a prominent perfumer who teaches him the ancient art of mixing precious oils and herbs. But Grenouille's genius is such that he is not satisfied to stop there, and he becomes obsessed with capturing the smells of objects such as brass doorknobs and fresh-cut wood. Then one day he catches a hint of a scent that will drive him on an ever-more-terrifying quest to create the "ultimate perfume" — the scent of a beautiful young virgin. Told with dazzling narrative brillance, Perfume is a hauntingly powerful tale of murder and sensual depravity.&lt;br /&gt;&lt;br /&gt;Translated from the German by John E. Woods.</description>
 <authors>
 <author>
@@ -2557,7 +2557,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/39402.Patrick_S_skind]]></link>
 <average_rating>3.97</average_rating>
-<ratings_count>219813</ratings_count>
+<ratings_count>219815</ratings_count>
 <text_reviews_count>10655</text_reviews_count>
 </author>
 </authors>
@@ -2574,8 +2574,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="patrick-suskind" exclusive="false" review_shelf_id="472081530" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="472081437" sortable="false" />
+    <shelf name="patrick-suskind" exclusive="false" review_shelf_id="472081530" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2646,9 +2646,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2013" exclusive="false" review_shelf_id="470874535" sortable="false" />
     <shelf name="five-star" exclusive="false" review_shelf_id="470874580" sortable="false" />
     <shelf name="umberto-eco" exclusive="false" review_shelf_id="470874552" sortable="false" />
-    <shelf name="read-2013" exclusive="false" review_shelf_id="470874535" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2687,7 +2687,7 @@
   <publication_year>2010</publication_year>
   <publication_month>8</publication_month>
   <average_rating>4.03</average_rating>
-  <ratings_count>1788330</ratings_count>
+  <ratings_count>1788336</ratings_count>
   <description>&lt;b&gt;My name is Katniss Everdeen.&lt;br /&gt;Why am I not dead?&lt;br /&gt;I should be dead.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Katniss Everdeen, girl on fire, has survived, even though her home has been destroyed. Gale has escaped. Katniss's family is safe. Peeta has been captured by the Capitol. District 13 really does exist. There are rebels. There are new leaders. A revolution is unfolding.&lt;br /&gt;&lt;br /&gt;It is by design that Katniss was rescued from the arena in the cruel and haunting Quarter Quell, and it is by design that she has long been part of the revolution without knowing it. District 13 has come out of the shadows and is plotting to overthrow the Capitol. Everyone, it seems, has had a hand in the carefully laid plans--except Katniss.&lt;br /&gt;&lt;br /&gt;The success of the rebellion hinges on Katniss's willingness to be a pawn, to accept responsibility for countless lives, and to change the course of the future of Panem. To do this, she must put aside her feelings of anger and distrust. She must become the rebels' Mockingjay--no matter what the personal cost.</description>
 <authors>
 <author>
@@ -2702,8 +2702,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/153394.Suzanne_Collins]]></link>
 <average_rating>4.27</average_rating>
-<ratings_count>8658692</ratings_count>
-<text_reviews_count>352631</text_reviews_count>
+<ratings_count>8658720</ratings_count>
+<text_reviews_count>352633</text_reviews_count>
 </author>
 </authors>
   <published>2010</published>
@@ -2719,8 +2719,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="suzanne-brockmann" exclusive="false" review_shelf_id="465059423" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="465059371" sortable="false" />
+    <shelf name="suzanne-brockmann" exclusive="false" review_shelf_id="465059423" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2862,8 +2862,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="rafael-sabatini" exclusive="false" review_shelf_id="456599642" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="456599671" sortable="false" />
+    <shelf name="rafael-sabatini" exclusive="false" review_shelf_id="456599642" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -2917,7 +2917,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/457.Anne_Tyler]]></link>
 <average_rating>3.67</average_rating>
-<ratings_count>306774</ratings_count>
+<ratings_count>306775</ratings_count>
 <text_reviews_count>24609</text_reviews_count>
 </author>
 </authors>
@@ -2934,8 +2934,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="anne-tyler" exclusive="false" review_shelf_id="451337363" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="451337198" sortable="false" />
+    <shelf name="anne-tyler" exclusive="false" review_shelf_id="451337363" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3006,8 +3006,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="jules-verne" exclusive="false" review_shelf_id="445898650" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="445898624" sortable="false" />
+    <shelf name="jules-verne" exclusive="false" review_shelf_id="445898650" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3078,8 +3078,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="chinua-achebe" exclusive="false" review_shelf_id="444235486" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="444235553" sortable="false" />
+    <shelf name="chinua-achebe" exclusive="false" review_shelf_id="444235486" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3204,7 +3204,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/463.Philip_Roth]]></link>
 <average_rating>3.79</average_rating>
-<ratings_count>276098</ratings_count>
+<ratings_count>276102</ratings_count>
 <text_reviews_count>18939</text_reviews_count>
 </author>
 </authors>
@@ -3221,8 +3221,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="philip-roth" exclusive="false" review_shelf_id="438691729" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="438691740" sortable="false" />
+    <shelf name="philip-roth" exclusive="false" review_shelf_id="438691729" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3292,8 +3292,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="ted-turner" exclusive="false" review_shelf_id="434338309" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="434338266" sortable="false" />
+    <shelf name="ted-turner" exclusive="false" review_shelf_id="434338309" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3434,8 +3434,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="gary-shteyngart" exclusive="false" review_shelf_id="414120253" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="414120093" sortable="false" />
+    <shelf name="gary-shteyngart" exclusive="false" review_shelf_id="414120253" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3576,8 +3576,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="phd" exclusive="false" review_shelf_id="400447082" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="400447115" sortable="false" />
+    <shelf name="phd" exclusive="false" review_shelf_id="400447082" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3648,8 +3648,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="milan-kundera" exclusive="false" review_shelf_id="398728047" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="398728098" sortable="false" />
+    <shelf name="milan-kundera" exclusive="false" review_shelf_id="398728047" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3720,8 +3720,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="italo-calvino" exclusive="false" review_shelf_id="392516702" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="392516633" sortable="false" />
+    <shelf name="italo-calvino" exclusive="false" review_shelf_id="392516702" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3791,8 +3791,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="phan-viet" exclusive="false" review_shelf_id="385129680" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="385129609" sortable="false" />
+    <shelf name="phan-viet" exclusive="false" review_shelf_id="385129680" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3831,7 +3831,7 @@
   <publication_year>2003</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.33</average_rating>
-  <ratings_count>1704315</ratings_count>
+  <ratings_count>1704323</ratings_count>
   <description>Frodo Baggins knew the Ringwraiths were searching for him—and the Ring of Power he bore that would enable Sauron to destroy all that was good in Middle-earth. Now it was up to Frodo and his faithful servant Sam to carry the Ring to where it could be destroyed—in the very center of Sauron's dark kingdom.</description>
 <authors>
 <author>
@@ -3863,8 +3863,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="five-star" exclusive="false" review_shelf_id="384001236" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="384001178" sortable="false" />
+    <shelf name="five-star" exclusive="false" review_shelf_id="384001236" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -3935,8 +3935,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="atiq-rahimi" exclusive="false" review_shelf_id="373600168" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="373600192" sortable="false" />
+    <shelf name="atiq-rahimi" exclusive="false" review_shelf_id="373600168" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4006,8 +4006,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="christian-grenier" exclusive="false" review_shelf_id="372877899" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="372877795" sortable="false" />
+    <shelf name="christian-grenier" exclusive="false" review_shelf_id="372877899" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4078,8 +4078,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="cuu-ba-dao" exclusive="false" review_shelf_id="368027157" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="368027059" sortable="false" />
+    <shelf name="cuu-ba-dao" exclusive="false" review_shelf_id="368027157" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4221,9 +4221,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="read-2013" exclusive="false" review_shelf_id="360188321" sortable="false" />
     <shelf name="five-star" exclusive="false" review_shelf_id="360188564" sortable="false" />
     <shelf name="richard-feynman" exclusive="false" review_shelf_id="360188490" sortable="false" />
-    <shelf name="read-2013" exclusive="false" review_shelf_id="360188321" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4261,7 +4261,7 @@
   <publication_year>2009</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.30</average_rating>
-  <ratings_count>1904675</ratings_count>
+  <ratings_count>1904681</ratings_count>
   <description>&lt;b&gt;Sparks are igniting.&lt;br /&gt;Flames are spreading.&lt;br /&gt;And the Capitol wants revenge.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Against all odds, Katniss has won the Hunger Games. She and fellow District 12 tribute Peeta Mellark are miraculously still alive. Katniss should be relieved, happy even. After all, she has returned to her family and her longtime friend, Gale. Yet nothing is the way Katniss wishes it to be. Gale holds her at an icy distance. Peeta has turned his back on her completely. And there are whispers of a rebellion against the Capitol - a rebellion that Katniss and Peeta may have helped create.&lt;br /&gt;&lt;br /&gt;Much to her shock, Katniss has fueled an unrest she's afraid she cannot stop. And what scares her even more is that she's not entirely convinced she should try. As time draws near for Katniss and Peeta to visit the districts on the Capitol's cruel Victory Tour, the stakes are higher than ever. If they can't prove, without a shadow of a doubt, that they are lost in their love for each other, the consequences will be horrifying.&lt;br /&gt;&lt;br /&gt;In &lt;i&gt;Catching Fire&lt;/i&gt;, the second novel in the Hunger Games trilogy, Suzanne Collins continues the story of Katniss Everdeen, testing her more than ever before...and surprising readers at every turn.</description>
 <authors>
 <author>
@@ -4276,8 +4276,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/153394.Suzanne_Collins]]></link>
 <average_rating>4.27</average_rating>
-<ratings_count>8658692</ratings_count>
-<text_reviews_count>352631</text_reviews_count>
+<ratings_count>8658720</ratings_count>
+<text_reviews_count>352633</text_reviews_count>
 </author>
 </authors>
   <published>2009</published>
@@ -4365,8 +4365,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="raymond-queneau" exclusive="false" review_shelf_id="342745681" sortable="false" />
     <shelf name="read-2013" exclusive="false" review_shelf_id="342745569" sortable="false" />
+    <shelf name="raymond-queneau" exclusive="false" review_shelf_id="342745681" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4420,7 +4420,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/585.John_Steinbeck]]></link>
 <average_rating>3.89</average_rating>
-<ratings_count>2742793</ratings_count>
+<ratings_count>2742806</ratings_count>
 <text_reviews_count>71998</text_reviews_count>
 </author>
 </authors>
@@ -4776,7 +4776,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/585.John_Steinbeck]]></link>
 <average_rating>3.89</average_rating>
-<ratings_count>2742793</ratings_count>
+<ratings_count>2742806</ratings_count>
 <text_reviews_count>71998</text_reviews_count>
 </author>
 </authors>
@@ -4793,8 +4793,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="305806631" sortable="false" />
     <shelf name="john-steinbeck" exclusive="false" review_shelf_id="305806583" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="305806631" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4864,8 +4864,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="301620306" sortable="false" />
     <shelf name="thomas-mann" exclusive="false" review_shelf_id="301620338" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="301620306" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -4935,8 +4935,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="288738026" sortable="false" />
     <shelf name="nonfiction" exclusive="false" review_shelf_id="288737981" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="288738026" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -5006,9 +5006,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="fiction" exclusive="false" review_shelf_id="288737473" sortable="false" />
     <shelf name="linda-howard" exclusive="false" review_shelf_id="288737339" sortable="false" />
     <shelf name="read-2012" exclusive="false" review_shelf_id="288737384" sortable="false" />
-    <shelf name="fiction" exclusive="false" review_shelf_id="288737473" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -5402,7 +5402,7 @@
   <publication_year>1999</publication_year>
   <publication_month>10</publication_month>
   <average_rating>3.63</average_rating>
-  <ratings_count>1573396</ratings_count>
+  <ratings_count>1573403</ratings_count>
   <description>When a plane crashes on a remote island, a small group of schoolboys are the sole survivors. From the prophetic Simon and virtuous Ralph to the lovable Piggy and brutish Jack, each of the boys attempts to establish control as the reality - and brutal savagery - of their situation sets in.&lt;br /&gt;&lt;br /&gt;The boys' struggle to find a way of existing in a community with no fixed boundaries invites readers to evaluate the concepts involved in social and political constructs and moral frameworks. Ideas of community, leadership, and the rule of law are called into question as the reader has to consider who has a right to power, why, and what the consequences of the acquisition of power may be. Often compared to &lt;i&gt;Catcher in the Rye&lt;/i&gt;, &lt;i&gt;Lord of the Flies&lt;/i&gt; also represents a coming-of-age story of innocence lost.</description>
 <authors>
 <author>
@@ -5417,7 +5417,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/306.William_Golding]]></link>
 <average_rating>3.63</average_rating>
-<ratings_count>1585790</ratings_count>
+<ratings_count>1585797</ratings_count>
 <text_reviews_count>26136</text_reviews_count>
 </author>
 </authors>
@@ -5434,8 +5434,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="235307001" sortable="false" />
     <shelf name="fiction" exclusive="false" review_shelf_id="235307040" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="235307001" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -5648,9 +5648,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="fiction" exclusive="false" review_shelf_id="223977485" sortable="false" />
     <shelf name="marai-sandor" exclusive="false" review_shelf_id="223977696" sortable="false" />
     <shelf name="read-2012" exclusive="false" review_shelf_id="223977499" sortable="false" />
-    <shelf name="fiction" exclusive="false" review_shelf_id="223977485" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -5721,8 +5721,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="220724176" sortable="false" />
     <shelf name="nonfiction" exclusive="false" review_shelf_id="220724167" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="220724176" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -5848,7 +5848,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/5091.Lee_Child]]></link>
 <average_rating>4.05</average_rating>
-<ratings_count>1192360</ratings_count>
+<ratings_count>1192368</ratings_count>
 <text_reviews_count>61341</text_reviews_count>
 </author>
 </authors>
@@ -5917,8 +5917,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/153394.Suzanne_Collins]]></link>
 <average_rating>4.27</average_rating>
-<ratings_count>8658692</ratings_count>
-<text_reviews_count>352631</text_reviews_count>
+<ratings_count>8658720</ratings_count>
+<text_reviews_count>352633</text_reviews_count>
 </author>
 </authors>
   <published>2008</published>
@@ -6149,8 +6149,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="174871472" sortable="false" />
     <shelf name="haruki-murakami" exclusive="false" review_shelf_id="162471401" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="174871472" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -6189,7 +6189,7 @@
   <publication_year>2006</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.09</average_rating>
-  <ratings_count>294864</ratings_count>
+  <ratings_count>294866</ratings_count>
   <description>Berlin, 1942 : When Bruno returns home from school one day, he discovers that his belongings are being packed in crates. His father has received a promotion and the family must move to a new house far, far away, where there is no one to play with and nothing to do. A tall fence stretches as far as the eye can see and cuts him off from the strange people in the distance.&lt;br /&gt;&lt;br /&gt;But Bruno longs to be an explorer and decides that there must be more to this desolate new place than meets the eye. While exploring his new environment, he meets another boy whose life and circumstances are very different from his own, and their meeting results in a friendship that has devastating consequences.</description>
 <authors>
 <author>
@@ -6398,7 +6398,7 @@
   <publication_year>2008</publication_year>
   <publication_month>11</publication_month>
   <average_rating>4.10</average_rating>
-  <ratings_count>346788</ratings_count>
+  <ratings_count>346791</ratings_count>
   <description>In this stunning new book, Malcolm Gladwell takes us on an intellectual journey through the world of "outliers"--the best and the brightest, the most famous and the most successful. He asks the question: what makes high-achievers different?&lt;br /&gt;&lt;br /&gt;His answer is that we pay too much attention to what successful people are like, and too little attention to where they are from: that is, their culture, their family, their generation, and the idiosyncratic experiences of their upbringing. Along the way he explains the secrets of software billionaires, what it takes to be a great soccer player, why Asians are good at math, and what made the Beatles the greatest rock band.</description>
 <authors>
 <author>
@@ -6413,7 +6413,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/1439.Malcolm_Gladwell]]></link>
 <average_rating>3.94</average_rating>
-<ratings_count>1308643</ratings_count>
+<ratings_count>1308659</ratings_count>
 <text_reviews_count>52226</text_reviews_count>
 </author>
 </authors>
@@ -6552,7 +6552,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/3706.George_Orwell]]></link>
 <average_rating>4.00</average_rating>
-<ratings_count>4028473</ratings_count>
+<ratings_count>4028487</ratings_count>
 <text_reviews_count>81923</text_reviews_count>
 </author>
 </authors>
@@ -6694,7 +6694,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/3706.George_Orwell]]></link>
 <average_rating>4.00</average_rating>
-<ratings_count>4028473</ratings_count>
+<ratings_count>4028487</ratings_count>
 <text_reviews_count>81923</text_reviews_count>
 </author>
 </authors>
@@ -6734,7 +6734,7 @@
   <id type="integer">2429135</id>
   <isbn>0307269752</isbn>
   <isbn13>9780307269751</isbn13>
-  <text_reviews_count type="integer">47395</text_reviews_count>
+  <text_reviews_count type="integer">47396</text_reviews_count>
   <title>The Girl with the Dragon Tattoo (Millennium, #1)</title>
   <image_url>https://images.gr-assets.com/books/1327868566m/2429135.jpg</image_url>
   <small_image_url>https://images.gr-assets.com/books/1327868566s/2429135.jpg</small_image_url>
@@ -6748,7 +6748,7 @@
   <publication_year>2008</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.10</average_rating>
-  <ratings_count>1799265</ratings_count>
+  <ratings_count>1799276</ratings_count>
   <description>Mikael Blomkvist, a once-respected financial journalist, watches his professional life rapidly crumble around him. Prospects appear bleak until an unexpected (and unsettling) offer to resurrect his name is extended by an old-school titan of Swedish industry. The catch—and there's always a catch—is that Blomkvist must first spend a year researching a mysterious disappearance that has remained unsolved for nearly four decades. With few other options, he accepts and enlists the help of investigator Lisbeth Salander, a misunderstood genius with a cache of authority issues. Little is as it seems in Larsson's novel, but there is at least one constant: you really don't want to mess with the girl with the dragon tattoo.</description>
 <authors>
 <author>
@@ -6817,7 +6817,7 @@
   <publication_year>2006</publication_year>
   <publication_month>1</publication_month>
   <average_rating>4.13</average_rating>
-  <ratings_count>176583</ratings_count>
+  <ratings_count>176586</ratings_count>
   <description>&lt;i&gt;Kafka on the Shore&lt;/i&gt; is powered by two remarkable characters: a teenage boy, Kafka Tamura, who runs away from home either to escape a gruesome oedipal prophecy or to search for his long-missing mother and sister; and an aging simpleton called Nakata, who never recovered from a wartime affliction and now is drawn toward Kafka for reasons that, like the most basic activities of daily life, he cannot fathom.&lt;br /&gt;&lt;br /&gt;As their paths converge, and the reasons for that convergence become clear, Haruki Murakami enfolds readers in a world where cats talk, fish fall from the sky, and spirits slip out of their bodies to make love or commit murder. &lt;i&gt;Kafka on the Shore&lt;/i&gt; displays one of the world’s great storytellers at the peak of his powers.</description>
 <authors>
 <author>
@@ -6971,7 +6971,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/11081.Margaret_Mitchell]]></link>
 <average_rating>4.28</average_rating>
-<ratings_count>868203</ratings_count>
+<ratings_count>868205</ratings_count>
 <text_reviews_count>15783</text_reviews_count>
 </author>
 </authors>
@@ -7164,7 +7164,7 @@
   <publication_year>2004</publication_year>
   <publication_month>4</publication_month>
   <average_rating>4.25</average_rating>
-  <ratings_count>1762167</ratings_count>
+  <ratings_count>1762177</ratings_count>
   <description>Khaled Hosseini's #1 New York Times Bestselling Debut&lt;br /&gt;&lt;br /&gt;&lt;i&gt; “It may be unfair, but what happens in a few days, sometimes even a single day, can change the course of a whole lifetime." &lt;/i&gt;&lt;br /&gt;&lt;br /&gt;Amir is the son of a wealthy Kabul merchant, a member of the ruling caste of Pashtuns. Hassan, his servant and constant companion, is a Hazara, a despised and impoverished caste. Their uncommon bond is torn by Amir's choice to abandon his friend amidst the increasing ethnic, religious, and political tensions of the dying years of the Afghan monarchy, wrenching them far apart. But so strong is the bond between the two boys that Amir journeys back to a distant world, to try to right past wrongs against the only true friend he ever had.&lt;br /&gt;&lt;br /&gt;The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father’s servant, &lt;i&gt;The Kite Runner&lt;/i&gt; is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies.&lt;br /&gt;&lt;br /&gt;A sweeping story of family, love, and friendship told against the devastating backdrop of the history of Afghanistan over the last thirty years, &lt;i&gt;The Kite Runner&lt;/i&gt; is an unusual and powerful novel that has become a beloved, one-of-a-kind classic.</description>
 <authors>
 <author>
@@ -7179,8 +7179,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/569.Khaled_Hosseini]]></link>
 <average_rating>4.25</average_rating>
-<ratings_count>2810743</ratings_count>
-<text_reviews_count>124739</text_reviews_count>
+<ratings_count>2810757</ratings_count>
+<text_reviews_count>124740</text_reviews_count>
 </author>
 </authors>
   <published>2004</published>
@@ -7196,8 +7196,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="khaled-hosseini" exclusive="false" review_shelf_id="601657062" sortable="false" />
     <shelf name="fiction" exclusive="false" review_shelf_id="601657160" sortable="false" />
+    <shelf name="khaled-hosseini" exclusive="false" review_shelf_id="601657062" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -7373,7 +7373,7 @@
   <publication_year></publication_year>
   <publication_month></publication_month>
   <average_rating>3.94</average_rating>
-  <ratings_count>36224</ratings_count>
+  <ratings_count>36225</ratings_count>
   <description>No woman could resist him—except the one he wanted most...&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Cool, Calm, Collected...&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Nothing fazes Taylor Donovan. In the courtroom she never lets the opposition see her sweat. In her personal life, she never lets any man rattle her—not even her cheating ex-fiancé. So when she's assigned to coach People's "Sexiest Man Alive" for his role in his next big legal thriller, she refuses to fall for the Hollywood heartthrob's charms. Even if he is &lt;i&gt;the&lt;/i&gt; Jason Andrews.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Confident, Famous, Irresistible...&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Jason Andrews is used to having women fall at his feet. When Taylor Donovan gives him the cold shoulder, he's thrown for a loop. She's unlike any other woman he's ever met: uninterested in the limelight, seemingly immune to his advances, and shockingly capable of saying no to him. She's the perfect challenge. And the more she rejects him, the more he begins to realize she may just be his perfect match.</description>
 <authors>
 <author>
@@ -7388,7 +7388,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/1647762.Julie_James]]></link>
 <average_rating>4.00</average_rating>
-<ratings_count>181681</ratings_count>
+<ratings_count>181685</ratings_count>
 <text_reviews_count>10494</text_reviews_count>
 </author>
 </authors>
@@ -7511,7 +7511,7 @@
   <publication_year>2006</publication_year>
   <publication_month>5</publication_month>
   <average_rating>4.25</average_rating>
-  <ratings_count>3152825</ratings_count>
+  <ratings_count>3152845</ratings_count>
   <description>The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.&lt;br /&gt;&lt;br /&gt;Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.</description>
 <authors>
 <author>
@@ -7927,7 +7927,7 @@
   <publication_year></publication_year>
   <publication_month></publication_month>
   <average_rating>4.33</average_rating>
-  <ratings_count>809644</ratings_count>
+  <ratings_count>809651</ratings_count>
   <description>Born a generation apart and with very different ideas about love and family, Mariam and Laila are two women brought jarringly together by war, by loss and by fate. As they endure the ever escalating dangers around them—in their home as well as in the streets of Kabul—they come to form a bond that makes them both sisters and mother-daughter to each other, and that will ultimately alter the course not just of their own lives but of the next generation.</description>
 <authors>
 <author>
@@ -7942,8 +7942,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/569.Khaled_Hosseini]]></link>
 <average_rating>4.25</average_rating>
-<ratings_count>2810743</ratings_count>
-<text_reviews_count>124739</text_reviews_count>
+<ratings_count>2810757</ratings_count>
+<text_reviews_count>124740</text_reviews_count>
 </author>
 </authors>
   <published></published>
@@ -8135,7 +8135,7 @@
   <publication_year>2006</publication_year>
   <publication_month>4</publication_month>
   <average_rating>3.84</average_rating>
-  <ratings_count>1936574</ratings_count>
+  <ratings_count>1936595</ratings_count>
   <description>When world-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a mysterious symbol—seared into the chest of a murdered physicist—he discovers evidence of the unimaginable: the resurgence of an ancient secret brotherhood known as the Illuminati ... the most powerful underground organization ever to walk the earth. The Illuminati has now surfaced to carry out the final phase of its legendary vendetta against its most hated enemy—the Catholic Church. &lt;br /&gt;&lt;br /&gt;Langdon’s worst fears are confirmed on the eve of the holy conclave, when a messenger of the Illuminati announces they have hidden an unstoppable time bomb at the very heart of Vatican City. With the countdown under way, Langdon jets to Rome to join forces with Vittoria Vetra, a beautiful and mysterious Italian scientist, to assist the Vatican in a desperate bid for survival. &lt;br /&gt;&lt;br /&gt;Embarking on a frantic hunt through sealed crypts, dangerous catacombs, deserted cathedrals, and even the most secretive vault on earth, Langdon and Vetra follow a 400-year-old trail of ancient symbols that snakes across Rome toward the long-forgotten Illuminati lair ... a clandestine location that contains the only hope for Vatican salvation.</description>
 <authors>
 <author>
@@ -8634,7 +8634,7 @@
 <![CDATA[https://images.gr-assets.com/authors/1472268490p2/5019771.jpg]]>
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/5019771.Nguy_n_Ng_c_T_]]></link>
-<average_rating>3.88</average_rating>
+<average_rating>3.89</average_rating>
 <ratings_count>2474</ratings_count>
 <text_reviews_count>214</text_reviews_count>
 </author>
@@ -8859,8 +8859,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="214050646" sortable="false" />
     <shelf name="fiction" exclusive="false" review_shelf_id="214050624" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="214050646" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -8898,7 +8898,7 @@
   <publication_year>2002</publication_year>
   <publication_month>12</publication_month>
   <average_rating>3.81</average_rating>
-  <ratings_count>926218</ratings_count>
+  <ratings_count>926223</ratings_count>
   <description>Wuthering Heights is a wild, passionate story of the intense and almost demonic love between Catherine Earnshaw and Heathcliff, a foundling adopted by Catherine's father. After Mr Earnshaw's death, Heathcliff is bullied and humiliated by Catherine's brother Hindley and wrongly believing that his love for Catherine is not reciprocated, leaves Wuthering Heights, only to return years later as a wealthy and polished man. He proceeds to exact a terrible revenge for his former miseries. The action of the story is chaotic and unremittingly violent, but the accomplished handling of a complex structure, the evocative descriptions of the lonely moorland setting and the poetic grandeur of vision combine to make this unique novel a masterpiece of English literature.</description>
 <authors>
 <author>
@@ -8913,7 +8913,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/4191.Emily_Bront_]]></link>
 <average_rating>3.82</average_rating>
-<ratings_count>948061</ratings_count>
+<ratings_count>948065</ratings_count>
 <text_reviews_count>25291</text_reviews_count>
 </author>
 </authors>
@@ -9382,7 +9382,7 @@
   <publication_year>2006</publication_year>
   <publication_month>8</publication_month>
   <average_rating>3.88</average_rating>
-  <ratings_count>1041369</ratings_count>
+  <ratings_count>1041376</ratings_count>
   <description>Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor "Pi" Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. He survives 227 days after a shipwreck while stranded on a boat in the Pacific Ocean with a Bengal tiger named Richard Parker.</description>
 <authors>
 <author>
@@ -9397,7 +9397,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/811.Yann_Martel]]></link>
 <average_rating>3.86</average_rating>
-<ratings_count>1070713</ratings_count>
+<ratings_count>1070721</ratings_count>
 <text_reviews_count>46513</text_reviews_count>
 </author>
 </authors>
@@ -9692,8 +9692,8 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
-    <shelf name="read-2012" exclusive="false" review_shelf_id="214259489" sortable="false" />
     <shelf name="nonfiction" exclusive="false" review_shelf_id="214259504" sortable="false" />
+    <shelf name="read-2012" exclusive="false" review_shelf_id="214259489" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -9800,7 +9800,7 @@
   <publication_year>2006</publication_year>
   <publication_month>3</publication_month>
   <average_rating>3.78</average_rating>
-  <ratings_count>1493801</ratings_count>
+  <ratings_count>1493807</ratings_count>
   <description>An ingenious code hidden in the works of Leonardo da Vinci. A desperate race through the cathedrals and castles of Europe. An astonishing truth concealed for centuries . . . unveiled at last.&lt;br /&gt;&lt;br /&gt;While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the dead of the night. The elderly curator of the Louvre has been murdered inside the museum, his body covered in baffling symbols. As Langdon and gifted French cryptologist Sophie Neveu sort through the bizarre riddles, they are stunned to discover a trail of clues hidden in the works of Leonardo da Vinci—clues visible for all to see and yet ingeniously disguised by the painter.&lt;br /&gt;&lt;br /&gt;Even more startling, the late curator was involved in the Priory of Sion—a secret society whose members included Sir Isaac Newton, Victor Hugo, and Da Vinci—and he guarded a breathtaking historical secret. Unless Langdon and Neveu can decipher the labyrinthine puzzle—while avoiding the faceless adversary who shadows their every move—the explosive, ancient truth will be lost forever.</description>
 <authors>
 <author>
@@ -9953,8 +9953,8 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/1728.Orhan_Pamuk]]></link>
 <average_rating>3.71</average_rating>
-<ratings_count>124444</ratings_count>
-<text_reviews_count>11778</text_reviews_count>
+<ratings_count>124445</ratings_count>
+<text_reviews_count>11779</text_reviews_count>
 </author>
 </authors>
   <published>2002</published>
@@ -10145,7 +10145,7 @@
   <publication_year>2000</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.02</average_rating>
-  <ratings_count>197198</ratings_count>
+  <ratings_count>197204</ratings_count>
   <description>Toru, a quiet and preternaturally serious young college student in Tokyo, is devoted to Naoko, a beautiful and introspective young woman, but their mutual passion is marked by the tragic death of their best friend years before. Toru begins to adapt to campus life and the loneliness and isolation he faces there, but Naoko finds the pressures and responsibilities of life unbearable. As she retreats further into her own world, Toru finds himself reaching out to others and drawn to a fiercely independent and sexually liberated young woman.&lt;br /&gt;&lt;br /&gt;A poignant story of one college student's romantic coming-of-age, &lt;b&gt;Norwegian Wood&lt;/b&gt; takes us to that distant place of a young man's first, hopeless, and heroic love.</description>
 <authors>
 <author>
@@ -10284,7 +10284,7 @@
   <publication_year></publication_year>
   <publication_month></publication_month>
   <average_rating>3.48</average_rating>
-  <ratings_count>54610</ratings_count>
+  <ratings_count>54611</ratings_count>
   <description>Welcome to our genetic world.&lt;p&gt;Fast, furious, and out of control.&lt;/p&gt;&lt;p&gt;This is not the world of the future --- it's the world right now.&lt;/p&gt;&lt;p&gt;Is a loved one missing some body parts? Are blondes becoming extinct? Is everyone at your dinner table of the same species? Humans and chimpanzees differ in only 400 genes; is that why an adult human being resembles a chimp fetus? And should that worry us? There's a new genetic cure for drug addiction --- is it worse than the disease?&lt;/p&gt;&lt;p&gt;We live in a time of momentous scientific leaps; a time when it's possible to sell our eggs and sperm online for thousands of dollars; test our spouses for genetic maladies and even frame someone for a genetic crime.&lt;/p&gt;&lt;p&gt;We live in a time when one fifth of all our genes are owned by someone else, and an unsuspecting person and his family can be pursued cross-country because they happen to have certain valuable genes within their chromosomes ...&lt;/p&gt;&lt;p&gt;Devilishly clever, Next blends fact and fiction into a breathless tale of a new world where nothing is what it seems, and a set of new possibilities can open at every turn. Next challenges our sense of reality and notions of morality. Balancing the comic and bizarre with the genuinely frightening and disturbing, Next shatters our assumptions, and reveals shocking new choices where we least expect.&lt;/p&gt;&lt;p&gt;The future is closer than you think. Get used to it.&lt;/p&gt;</description>
 <authors>
 <author>
@@ -10423,7 +10423,7 @@
   <publication_year>2004</publication_year>
   <publication_month>8</publication_month>
   <average_rating>4.45</average_rating>
-  <ratings_count>1738623</ratings_count>
+  <ratings_count>1738638</ratings_count>
   <description>Harry Potter is due to start his fifth year at Hogwarts School of Witchcraft and Wizardry. His best friends Ron and Hermione have been very secretive all summer and he is desperate to get back to school and find out what has been going on. However, what Harry discovers is far more devastating than he could ever have expected...&lt;br /&gt;&lt;br /&gt;Suspense, secrets and thrilling action from the pen of J.K. Rowling ensure an electrifying adventure that is impossible to put down.</description>
 <authors>
 <author>
@@ -11321,7 +11321,7 @@
   <publication_year>2006</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.53</average_rating>
-  <ratings_count>1671683</ratings_count>
+  <ratings_count>1671695</ratings_count>
   <description>It is the middle of the summer, but there is an unseasonal mist pressing against the windowpanes. Harry Potter is waiting nervously in his bedroom at the Dursleys' house in Privet Drive for a visit from Professor Dumbledore himself. One of the last times he saw the Headmaster was in a fierce one-to-one duel with Lord Voldemort, and Harry can't quite believe that Professor Dumbledore will actually appear at the Dursleys' of all places. Why is the Professor coming to visit him now? What is it that cannot wait until Harry returns to Hogwarts in a few weeks' time? Harry's sixth year at Hogwarts has already got off to an unusual start, as the worlds of Muggle and magic start to intertwine...&lt;br /&gt;&lt;br /&gt;J.K. Rowling charts Harry Potter's latest adventures in his sixth year at Hogwarts with consummate skill and in breathtaking fashion.</description>
 <authors>
 <author>
@@ -11544,7 +11544,7 @@
 </small_image_url>
 <link><![CDATA[https://www.goodreads.com/author/show/12455.Thomas_Harris]]></link>
 <average_rating>4.02</average_rating>
-<ratings_count>637894</ratings_count>
+<ratings_count>637895</ratings_count>
 <text_reviews_count>10127</text_reviews_count>
 </author>
 </authors>
@@ -11561,9 +11561,9 @@
 <shelves>
   <shelf name="read" exclusive="true" />
 
+    <shelf name="thomas-harris" exclusive="false" review_shelf_id="785218484" sortable="false" />
     <shelf name="read-2014" exclusive="false" review_shelf_id="785218488" sortable="false" />
     <shelf name="five-star" exclusive="false" review_shelf_id="785218490" sortable="false" />
-    <shelf name="thomas-harris" exclusive="false" review_shelf_id="785218484" sortable="false" />
 </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
