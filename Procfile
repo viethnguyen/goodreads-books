@@ -1,1 +1,1 @@
-web: cabal run -- -p $PORT
+web: dist/build/goodreads-books/goodreads-books -- -p $PORT
