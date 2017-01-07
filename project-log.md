@@ -190,3 +190,7 @@ then in Snap HTML template I can specify the path to the css file:
 - I added the link to Goodreads for each book. 
 
 # Jan 7, 2017 
+
+- I added more comments to the code
+- I'm trying to deploy the app to Heroku. This task needs more time.
+- I removed the temporary response file after processing. 

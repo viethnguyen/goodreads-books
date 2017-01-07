@@ -3,8 +3,7 @@ A web app that mirrors book info from Goodreads and displays in a more compact, 
 
 ## Features 
 
-- Allow user to log in 
-- Connect to Goodreads to get information
-- Write book information into an inner database
-- Display book information in nice format
+- Connect to Goodreads to get information.
+- Parse the response from Goodreads to get needed information.
+- Use Snap to serve a web page displaying the books. 
 
