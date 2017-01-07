@@ -194,3 +194,11 @@ then in Snap HTML template I can specify the path to the css file:
 - I added more comments to the code
 - I'm trying to deploy the app to Heroku. This task needs more time.
 - I removed the temporary response file after processing. 
+- Need to know a bit about Heroku:
+- Applications consist of your source code, a description of any
+  dependencies, and a Procfile.
+- Terminology: A slug is a bundle of your source, fetched
+  dependencies, the language runtime, and compiled/generated output of
+  the build system - ready for execution.
+  
+-   
