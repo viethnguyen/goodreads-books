@@ -201,4 +201,27 @@ then in Snap HTML template I can specify the path to the css file:
   dependencies, the language runtime, and compiled/generated output of
   the build system - ready for execution.
   
--   
+# Jan 10, 2017 
+
+- Try to deploy code to Heroku 
+
+- To load private key to Heroku, use Config Vars:
+  https://devcenter.heroku.com/articles/config-vars
+  
+- On a traditional host or working locally you can set environment
+  vars in your `bashrc` file. On Heroku, you use config vars. 
+  
+- Setting up config vars for a deployed application: use `config:set`,
+  `config:get` and `config:unset`.
+  
+- You can also edit config vars on your app settings tab on
+  Dashboard. 
+  
+- On local machine, the environmental variable can be set by add to
+  `~/.zshrc`: 
+  
+```sh
+export GOODREADS_KEY="..."
+```
+
+

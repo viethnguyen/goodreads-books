@@ -25,6 +25,7 @@ import Snap.Util.FileServe
 import System.Directory
 import Text.HTML.TagSoup
 import Text.XmlHtml hiding (render)
+import System.Environment
 
 ------------------------------------------------------------------------------
 import Application
@@ -46,10 +47,7 @@ routes = [("/book", bookHandler), ("media", serveDirectory "static/media")]
 -------------------------------------------------------------------------------
 -- | Read Goodreads key and password from a file
 goodreadsKey :: IO String
-goodreadsKey = fmap (takeWhile (/= '\n')) $ readFile "src/.goodreadskey"
-
-goodreadsPass :: IO String
-goodreadsPass = fmap (dropWhile (/= '\n')) $ readFile "src/.goodreadskey"
+goodreadsKey = getEnv "GOODREADS_KEY"
 
 -- | Bood data type
 data Book = Book
