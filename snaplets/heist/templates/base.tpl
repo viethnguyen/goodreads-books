@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Home Page</title>
+    <title>Viet Nguyen's books</title>
     <link href="media/css/worg.css" rel="stylesheet" type="text/css" title="Worg" />
   </head>
   <body>
@@ -15,3 +15,4 @@
     </div>
   </body>
 </html>
+

@@ -224,4 +224,14 @@ then in Snap HTML template I can specify the path to the css file:
 export GOODREADS_KEY="..."
 ```
 
+- changed the code to read the environmental variable for the
+  Goodreads key. 
+
+- On Heroku, tell how to start the server: 
+
+```sh
+ dist/build/goodreads-books/goodreads-books -p $PORT
+```
+
+Make sure that the app is ON. 
 

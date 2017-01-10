@@ -42,7 +42,7 @@ app =
 
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
-routes = [("/book", bookHandler), ("media", serveDirectory "static/media")]
+routes = [("/", bookHandler), ("media", serveDirectory "static/media")]
 
 -------------------------------------------------------------------------------
 -- | Read Goodreads key and password from a file
