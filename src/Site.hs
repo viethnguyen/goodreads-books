@@ -8,6 +8,7 @@ module Site
   ( app
   ) where
 
+
 import Control.Lens
 import Control.Monad.IO.Class
 import Data.ByteString (ByteString)
@@ -26,6 +27,8 @@ import System.Directory
 import Text.HTML.TagSoup
 import Text.XmlHtml hiding (render)
 import System.Environment
+import Criterion.Main
+import Data.Time.Clock
 
 ------------------------------------------------------------------------------
 import Application
@@ -182,13 +185,29 @@ books =
     }
   ]
 
+tellTime :: String -> IO ()
+tellTime s = do
+  putStr s
+  putStr ": "
+  t <- getCurrentTime
+  putStrLn $ show t
+  
 -- | handler
 bookHandler :: Handler App App ()
 bookHandler = do
+  liftIO $ tellTime "before saving response from Goodreads:"
   liftIO saveGoodreadsResponseBody
+
+  liftIO $ tellTime "before extracting info from the response file:"
   brs <- liftIO getBookReviews
+
+  liftIO $ tellTime "before remove file: "
   liftIO $ removeFile goodreadsResFilename
+
+  liftIO $ tellTime "before parse reviews" 
   let bs = map parseReview brs
+
+  liftIO $ tellTime "before rendering with Splices" 
   renderWithSplices "book" (allBooksSplices bs)
 
 -- | convert a list of books to splices
