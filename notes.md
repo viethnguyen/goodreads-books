@@ -72,8 +72,10 @@ dependencies, and a Procfile.
 There is a CLI tool to install on local machine to interact with
 remote Heroku server. 
 
-Typically, app on Heroku relies on Buildpack to tell it to compile the
-code once the code is deployed to Heroku git repo. For this Haskell
+Typically, the way to deploy app to Heroku is that we need to push the
+code into a Heroku git repo. Once it's done, the code will be compiled
+on the Heroku server side. App on Heroku relies on Buildpack to tell
+it how to compile the code. For this Haskell
 app, I use this Buildpack:
 https://github.com/begriffs/heroku-buildpack-ghc.git. I needed to specify
 it in the Settings of the app in Heroku control panel. 
