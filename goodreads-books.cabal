@@ -38,7 +38,9 @@ Executable goodreads-books
     wreq,
     tagsoup,
     directory,
-    transformers
+    transformers,
+    criterion,
+    time                 
 
   if flag(old-base)
     build-depends:

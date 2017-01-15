@@ -1,5 +1,5 @@
 # goodreads-books
-A web app that mirrors book info from Goodreads and displays in a more compact, readable format. 
+A web app that retrieve a list of books from Goodreads and displays it in a more compact, readable format. 
 
 ## Features 
 

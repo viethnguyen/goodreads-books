@@ -235,6 +235,19 @@ export GOODREADS_KEY="..."
 
 Make sure that the app is ON. 
 
+## Jan 13, 2017
+
+- Try to profile the program to find the bottleneck functions. At
+  first I tried to use Criterion, but haven't figured out the way to
+  monitor each function yet. So I switched to just print out the time
+  using `Date.Time.Clock`
+  
+- The most time consuming task now is saving reponse from Goodreads
+  into a file. 
+  
+- Solution now is to cached data and periodically fetch the new data
+  and refresh the page. 
+  
 # Jan 15, 2017 
 
 - Previously, it took too long to load the page because everytime I
@@ -245,4 +258,5 @@ Make sure that the app is ON.
   Goodreads and override an inner database file. When the page is
   loaded, it only needs to parse this inner file. 
   
-  
+
+
