@@ -20,6 +20,6 @@ cabal.project.local
 
 log/*
 bin/*
-src/.goodreadskey
+.goodreadsresponse
 \#*
 .\#*

@@ -70,6 +70,7 @@ main
     -- trigger reloads in development mode. It doesn't need to include source
     -- directories, those are picked up automatically by the splice.
  = do
+  periodicUpdate
   (conf, site, cleanup) <-
     $(loadSnapTH [|getConf|] 'getActions ["snaplets/heist/templates"])
   _ <- try $ httpServe conf site :: IO (Either SomeException ())

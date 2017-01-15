@@ -235,3 +235,14 @@ export GOODREADS_KEY="..."
 
 Make sure that the app is ON. 
 
+# Jan 15, 2017 
+
+- Previously, it took too long to load the page because everytime I
+  access the page, the app connect to Goodreads to fetch data and
+  after that parse the resonse. The fetching time is long. 
+  
+- To fix this, I added a thread that periodically fetch data from
+  Goodreads and override an inner database file. When the page is
+  loaded, it only needs to parse this inner file. 
+  
+  

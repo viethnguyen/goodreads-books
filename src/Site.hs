@@ -6,6 +6,7 @@
 -- together and is exported by this module.
 module Site
   ( app
+  , periodicUpdate
   ) where
 
 import Control.Lens
@@ -24,8 +25,10 @@ import Snap.Snaplet.Heist
 import Snap.Util.FileServe
 import System.Directory
 import Text.HTML.TagSoup
-import Text.XmlHtml hiding (render)
+-- import Text.XmlHtml hiding (render)
 import System.Environment
+import Control.Concurrent
+import Control.Monad
 
 ------------------------------------------------------------------------------
 import Application
@@ -49,7 +52,7 @@ routes = [("/", bookHandler), ("media", serveDirectory "static/media")]
 goodreadsKey :: IO String
 goodreadsKey = getEnv "GOODREADS_KEY"
 
--- | Bood data type
+-- | Data type for book
 data Book = Book
   { title :: String
   , image_url :: String
@@ -61,7 +64,7 @@ data Book = Book
 
 -- | goodread response file name
 goodreadsResFilename :: FilePath
-goodreadsResFilename = "src/.goodreadsresponse"
+goodreadsResFilename = ".goodreadsresponse"
 
 -- | Use wreq to save response body from Goodreads into a file
 saveGoodreadsResponseBody :: IO ()
@@ -75,6 +78,16 @@ saveGoodreadsResponseBody
       ("https://www.goodreads.com/review/list/5285276.xml?key=" ++
        key ++ "&v=2&shelf=read&sort=date_read&per_page=200")
   BLI.writeFile goodreadsResFilename (r ^. responseBody)
+
+-- | Periodic update of inner database
+periodicUpdate :: IO ThreadId
+periodicUpdate = forkIO loop
+  where loop = do
+          saveGoodreadsResponseBody
+          threadDelay (10^6 * updateRate)
+          loop
+        updateRate = 10 -- in seconds 
+  
 
 -- | For testing, a sample book review. A book review is a collection of TagSoup tags between the two tags <review> and </review>
 sampleBookReview :: IO [Tag String]
@@ -185,9 +198,9 @@ books =
 -- | handler
 bookHandler :: Handler App App ()
 bookHandler = do
-  liftIO saveGoodreadsResponseBody
+  --liftIO saveGoodreadsResponseBody
   brs <- liftIO getBookReviews
-  liftIO $ removeFile goodreadsResFilename
+  --liftIO $ removeFile goodreadsResFilename
   let bs = map parseReview brs
   renderWithSplices "book" (allBooksSplices bs)
 
