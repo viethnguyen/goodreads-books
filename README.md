@@ -11,7 +11,7 @@ A web app that retrieve a list of books from Goodreads and displays it in a more
 ## How to run 
 
 The project is compiled
-using [https://docs.haskellstack.org/en/stable/README/](Stack) build
+using [Stack](https://docs.haskellstack.org/en/stable/README/) build
 tool. After install it, compile the app: 
 
 ```sh 
