@@ -34,13 +34,57 @@ goodreadsKey = getEnv "GOODREADS_KEY"
 ## Serve a webpage using Snap
 
 Snap is a mature web framework in Haskell. In this project, I only
-used a very small features of this framework. 
+used a very small subset of features in this framework. 
 
 Snap has a scaffolding tool to quickly get users started. If you are
 new to Snap, start with `Site.hs` and `Application.hs`. In this
 project, I only added code to `Site.hs`. 
 
-Documents for Snap:
+To define app routes: 
+
+```haskell
+routes :: [(ByteString, Handler App App ())]
+routes = [ ("/book", bookHandler)
+         , ("media", serveDirectory "static/media")]
+```
+
+Snap uses Heist templating framework. 
+
+## Parse Goodreads response 
+
+The application saves Goodreads response in an inner file. This file
+is updated periodically in a separate thread so that the data is
+always fresh.
+
+To parse this response file, I use `tagsoup` library. The fields I'm
+interested in includes: book cover image link, book name, author, book
+description and my comment. I extracted these fields by mostly using
+`takeWhile` and `dropWhile` functions in `tagsoup` to extract info
+between specific tags. 
 
 
 ## Deploy to Heroku 
+
+I read a little bit about how Heroku works. Basically, an application
+in Heroku consists of the source code, a description of any
+dependencies, and a Procfile. 
+
+There is a CLI tool to install on local machine to interact with
+remote Heroku server. 
+
+Typically, app on Heroku relies on Buildpack to tell it to compile the
+code once the code is deployed to Heroku git repo. For this Haskell
+app, I use this Buildpack:
+https://github.com/begriffs/heroku-buildpack-ghc.git. I needed to specify
+it in the Settings of the app in Heroku control panel. 
+
+In this application, there is a private key needs to be stored in the
+app. Heroku supports loading private key with `Config Vars`: https://devcenter.heroku.com/articles/config-vars
+
+In Procfile, I need to specify how to start the server: 
+
+```sh
+web: dist/build/goodreads-books/goodreads-books -p $PORT
+```
+
+
